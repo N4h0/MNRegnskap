@@ -16,8 +16,8 @@ import * as process from 'process';
   process.env.NODE_ENV === "development"
       ? [
           "User.Read",
-          "api://937d1870-9888-473a-9b59-8b3b4b5c7e8d/user_impersonation",
-          "api://2c24f4c2-f795-4b93-ba70-5da8b8aa5ac3/user_impersonation",
+          "api://937d1870-9888-473a-9b59-8b3b4b5c7e8d/user_impersonation", //endre dette
+          "api://2c24f4c2-f795-4b93-ba70-5da8b8aa5ac3/user_impersonation", //endre dette
         ]
       : [".default"];
   

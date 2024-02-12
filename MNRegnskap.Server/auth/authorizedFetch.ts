@@ -1,6 +1,4 @@
 import { instance } from "./instance";
-import * as process from 'process';
-
 
 /**
  * A wrapper for the global fetch function, which acquires and injects a token if the resource requires it.
@@ -23,8 +21,8 @@ async function authorizedFetch(
     scopes.push("User.Read");
   } else if (url?.toLowerCase().startsWith(env.VITE_API_URL)) {
     scopes.push(env.VITE_SCOPE_URI as string);
-  } else if (url?.toLowerCase().startsWith(env.VITE_API_URL_BILLING)) {
-    scopes.push(env.VITE_SCOPE_URI_BILLING as string);
+  } else if (url?.toLowerCase().startsWith(env.VITE_API_URL_BILLING)) { //API vi skal hente
+    scopes.push(env.VITE_SCOPE_URI_BILLING as string); //API vi skal hente
   }
 
   if (scopes.length > 0) {
