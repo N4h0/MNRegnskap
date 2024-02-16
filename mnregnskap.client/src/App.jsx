@@ -1,49 +1,45 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
+
 function App() {
-    const [forecasts, setForecasts] = useState();
+    const [question, setQuestion] = useState('');
+    const [response, setResponse] = useState('');
 
-    useEffect(() => {
-        populateWeatherData();
-    }, []);
+    //Nytt her:
 
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-        : <table className="table table-striped" aria-labelledby="tabelLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
-
+    const sendQuestionToAPI = () => {
+        fetch('http://127.0.0.1:5000/api/chatbot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ question: question }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                setResponse(JSON.stringify(data, null, 2));
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    };
     return (
-        <div>
-            <h1 id="tabelLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
+        <div className="App">
+            <header className="App-header">
+                <input
+                    type="text"
+                    value={question}
+                    onChange={(e) => setQuestion(e.target.value)}
+                    placeholder="Enter your question"
+                />
+                <button onClick={sendQuestionToAPI}>Send Question</button>
+                <button onClick={sendQuestionToAPI}>Send The Same Question Again</button>
+                {response && <pre>{response}</pre>}
+            </header>
         </div>
     );
-    
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        setForecasts(data);
-    }
 }
 
 export default App;
