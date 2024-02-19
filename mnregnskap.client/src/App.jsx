@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
+import useState from 'react';
 import './App.css';
-
+import  NavBar from './components/NavBar';
 
 function App() {
     const [question, setQuestion] = useState('');
     const [response, setResponse] = useState('');
 
-    //Nytt her:
-
+    //AI-generert kode, må endres/forstårs:
     const sendQuestionToAPI = () => {
         fetch('http://127.0.0.1:5000/api/chatbot', {
             method: 'POST',
@@ -25,9 +25,11 @@ function App() {
                 console.error('Error:', error);
             });
     };
+    //AI-generert kode, må endres/forstårs:
     return (
         <div className="App">
             <header className="App-header">
+                <NavBar>Test</NavBar>
                 <input
                     type="text"
                     value={question}
