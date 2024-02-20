@@ -1,0 +1,69 @@
+.img-style {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+.bilde-seksjon {
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+}
+
+.bilde-seksjon-img {
+    position: relative;
+    width: 100%;
+}
+
+
+h1 {
+    font-family: "Volkhov", serif;
+    font-size: 60px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.tekst-i-midten {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    .tekst-i-midten h1,
+    .tekst-i-midten h4 {
+        margin: 0;
+    }
+
+.mer-info-knapp {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    color: black;
+    border: 2px solid black; /* Legg til en svart border */
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+    .mer-info-knapp:hover {
+        background-color: white; /* Endre bakgrunnsfargen ved hover til svart */
+    }
+
+
+
+.tekst-i-midten h4 {
+    margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
+    margin-top:10px;
+}
+
+.tekst-i-midten .bildet-seksjon-knapp {
+    margin-top: 30px; /* Legg til margin over knappen */
+}
