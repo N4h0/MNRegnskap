@@ -1,46 +1,29 @@
 //import { useEffect, useState } from 'react';
 import useState from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import  NavBar from './components/NavBar';
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Hjem from './pages/Hjem';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+
+//Må vere isntallert:
+//react-router-dom: npm install react-router-dom
+//reactstrap: npm install reactstrap
 
 function App() {
-    const [question, setQuestion] = useState('');
-    const [response, setResponse] = useState('');
-
-    //AI-generert kode, må endres/forstårs:
-    const sendQuestionToAPI = () => {
-        fetch('http://127.0.0.1:5000/api/chatbot', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ question: question }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                setResponse(JSON.stringify(data, null, 2));
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    };
-    //AI-generert kode, må endres/forstårs:
     return (
-        <div className="App">
-            <header className="App-header">
-                <NavBar>Test</NavBar>
-                <input
-                    type="text"
-                    value={question}
-                    onChange={(e) => setQuestion(e.target.value)}
-                    placeholder="Enter your question"
-                />
-                <button onClick={sendQuestionToAPI}>Send Question</button>
-                <button onClick={sendQuestionToAPI}>Send The Same Question Again</button>
-                {response && <pre>{response}</pre>}
-            </header>
-        </div>
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Hjem />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/Hjem" element={<Hjem />} />
+            </Routes>
+        </Router>
     );
 }
 
