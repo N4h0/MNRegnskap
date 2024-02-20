@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Hjem from './pages/Hjem';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Team from './pages/Team'
 
 
 //Må vere isntallert:
@@ -19,6 +20,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Hjem />} />
+                <Route path="/Team" element={<Team />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/Hjem" element={<Hjem />} />
