@@ -8,7 +8,6 @@ export default class NavBar extends Component {
 
     constructor(props) {
         super(props);
-
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.state = {
             collapsed: true
