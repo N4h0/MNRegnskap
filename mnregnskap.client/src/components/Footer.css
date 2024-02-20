@@ -1,0 +1,7 @@
+.Footer {
+    margin-top: auto; /*Feste footeren til botn av sida (sjekk: https://www.youtube.com/watch?v=pggIVY5eOGM) */
+   margin-bottom: 0px;
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    color: #333; /* Example text color */
+}

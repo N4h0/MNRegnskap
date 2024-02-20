@@ -1,3 +1,5 @@
+//Denne fila er berre notat for min (Johan) sin del for å sjå på korleis footeren var før.
+
 <footer class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon">
 
 
