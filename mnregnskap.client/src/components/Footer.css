@@ -1,7 +1,54 @@
 .Footer {
     margin-top: auto; /*Feste footeren til botn av sida (sjekk: https://www.youtube.com/watch?v=pggIVY5eOGM) */
-   margin-bottom: 0px;
-    background-color: #f0f0f0; /* Example background color */
-    padding: 20px;
-    color: #333; /* Example text color */
+    margin-bottom: 0px;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF; /* Example text color */
+    background-color: #3a3a3a;
+}
+.footer-adv {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.ast-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+}
+
+.widget-title{
+    margin:0 0 15px;
+    font-size:20px;
+}
+.address-meta {
+    font-size: 15px;
+
+}
+.widget-address-field{
+    display:flex;
+    padding-bottom:20px;
+}
+
+.address-icons path {
+    fill: #ffffff; /* eller fill: white; */
+}
+
+
+.ast-col-md-3, .ast-col-lg-3, .ast-col-sm-12, ast-col-xs-12 {
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    #astra-widget-address-5 .widget-address .widget-address-field .address-meta {
+    margin-left: 10px;
+}
+
+.ast-row.ast-flex {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.address{
+    margin-top:50px;
 }
