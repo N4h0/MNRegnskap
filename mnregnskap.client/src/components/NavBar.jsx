@@ -22,11 +22,10 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <header>
-                <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3 fixed-top navbar" light>
+                <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow navbar" light>
                     <NavbarBrand tag={Link} to="/hjem" className="navbar-logo-container">
                         <div className="navbar-logo-wrapper">
-                            <img src="/public/mn-regnskaplogo.png" alt="M&N Regnskap Logo" className="mr-2 navbar-logo" />
+                            <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" className="mr-2 navbar-logo" />
                         </div>
                     </NavbarBrand>
 
@@ -51,11 +50,9 @@ export default class NavBar extends Component {
                                     <p className="nav-link-text">Kontakt oss</p>
                                 </NavLink>
                             </NavItem>
-
                         </ul>
                     </Collapse>
                 </Navbar>
-            </header>
         );
     }
 }

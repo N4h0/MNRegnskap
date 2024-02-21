@@ -8,10 +8,7 @@ const Footer = () => {
                 <div className="footer-adv-overlay">
                     <div className="ast-container">
                         <div className="ast-row">
-                            {/* Contact Information */}
                             <ContactInfo />
-                            {/* Additional Widgets or Content */}
-                            {/* This is where you can simplify or add more components as needed */}
                         </div>
                     </div>
                 </div>
@@ -32,15 +29,12 @@ const Footer = () => {
     );
 };
 
-// ContactInfo component
 const ContactInfo = () => (
     <div className="ast-col-lg-3 ast-col-md-3 ast-col-sm-12 ast-col-xs-12 footer-adv-widget">
         <h2 className="widget-title">Ta Kontakt</h2>
-        {/* Add the address and contact SVGs and text here */}
     </div>
 );
 
-// Copyright component
 const Copyright = () => (
     <div className="ast-small-footer-section ast-small-footer-section-1 ast-small-footer-section-equally ast-col-md-6">
         <p>Opphavsrett © {new Date().getFullYear()} M&N Regnskap. All rights reserved.</p>

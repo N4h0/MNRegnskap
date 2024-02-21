@@ -4,7 +4,6 @@ a.navbar-brand {
     word-break: break-all;
 }
 
-
 html {
     font-size: 14px;
 }
@@ -19,18 +18,14 @@ html {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-
 /* NavBar.css */
-
 .nav-link {
     outline: none;
     height: auto;
     left: 698px;
     pointer-events: auto;
     top: 16px;
-  
     color: rgb(64, 100, 215);
-
 }
 
 .nav-link-text {
@@ -44,14 +39,10 @@ html {
     height: 88px;
     left: 0;
     overflow: visible;
-    position: absolute;
     right: 0;
     top: 0;
     z-index: 4;
 }
-
-
-
 
 .navbar-logo {
     display: block;
@@ -62,4 +53,3 @@ html {
     object-fit: cover;
     image-rendering: auto;
 }
-
