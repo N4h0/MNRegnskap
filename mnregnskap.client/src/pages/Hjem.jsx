@@ -116,13 +116,13 @@ const Partnere = () => (
 const Møtoss = () => (
     <>
         <h1 className="Møt-oss-overskrift">Møt oss</h1>
-        <div className="Møt-oss-flex">
+        <div className="møt-oss-flex">
             <div className="Møt-oss-bilde">
-                <img src="./Moosa.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <img src="./Naila.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
             <div className="Møt-oss-bilde">
-                <img src="./Naila.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <img src="./Moosa.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
         </div>
@@ -130,7 +130,32 @@ const Møtoss = () => (
 );
 
 const Kontakt = () => (
-    <></>
+    <>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="./bok.jpg" alt="" />
+            </div>
+            <div class="text-overlay">
+                <div class="title-container">
+                    <h1 class="title">Join Our Family of Talent</h1>
+                </div>
+                <div class="text-container">
+                    <h2 class="text">
+                      Concentrate on what you are good at - We take care of the accounts! Contact us for a no-obligation conversation.
+                    </h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-wrapper">
+                        <p class="contact-title">Kontakt Oss</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </>
 );
 
 export default Homepage;

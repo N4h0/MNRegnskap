@@ -132,20 +132,117 @@ h1 {
 
 /*Møt oss*/
 
-.Møt-oss-flex {
+
+.møt-oss-flex {
     display: flex;
     justify-content: center;
 }
 
 .Møt-oss-bilde {
-    flex: 0 0 calc(50%); /* Tek op 50% av breidda til felboksen*/
     text-align: center;
-    max-width: 100%; 
-    height: auto;
+    margin: 0 1000px;
 }
 
-.Møt-oss-bilde {
-    max-width: 100%; 
-    height: auto;
+    .Møt-oss-bilde img {
+        border-radius: 50%;
+        width: 200px; /* Juster størrelsen etter behov */
+        height: 200px; /* Juster størrelsen etter behov */
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+
+    /*Kontakt oss*/
+
+
+
+.image-wrapper img {
+    width: 100vw; /* Bredde tilsvarer 100% av vindusbredden */
+    height: auto; /* Beholder bildets sideforhold */
+    max-height: 60vh; /* Begrenser maksimal høyde til 70% av vindushøyden */
+    display: block; /* Fjerner eventuelle ekstra mellomrom under bildet */
+    margin: 0; /* Fjerner marginer for å sikre at bildet tar hele bredden */
 }
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+.text-overlay {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    right:500px;
+}
+
+.text-overlay {
+  
+    display: flex;
+    flex-direction: column; /* Plasserer elementene i en rad */
+}
+.title {
+    font-size: 30px;
+    font-family: "Trocchi", "Trocchi Placeholder", serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+}
+
+.text-container {
+    color: black;
+    font-size: 20px;
+    height: auto;
+    left: 60px;
+    pointer-events: auto;
+    position: absolute;
+    top: 100px;
+    user-select: none;
+    white-space: pre-wrap;
+    width: 765px;
+    word-break: break-word;
+    word-wrap: break-word;
+
+}
+.text {
+    font-family: "Cormorant", "Cormorant Placeholder", serif;
+    font-size: 31px;
+    line-height: 40.3px;
+    text-align: right;
+    color: rgb(125, 75, 39);
+}
+.contact-container {
+    border: 2.67px double #7d4b27;
+    border-radius: 2px;
+    background-color: #fcf7e5bf;
+    height: 73px;
+    position: absolute;
+    top:250px;
+    bottom: 147px;
+    left: 298px;
+    box-shadow: 0 0 0 1px #333;
+    overflow: visible;
+}
+.contact-title {
+    font-family: "Cormorant", "Cormorant Placeholder", serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(125, 75, 39);
+    text-transform: uppercase;
+}
+.contact-wrapper{
+    padding:20px 20px;
+}
+
 
