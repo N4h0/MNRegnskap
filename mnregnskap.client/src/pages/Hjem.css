@@ -131,30 +131,35 @@ h1 {
 }
 
 /*Møt oss*/
-
-
-.møt-oss-flex {
+.flex-container {
     display: flex;
-    justify-content: center;
-}
-
-.Møt-oss-bilde {
+    flex-direction: row;
+    font-size: 30px;
     text-align: center;
-    margin: 0 1000px;
+}
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+    border-radius: 50%;
 }
 
-    .Møt-oss-bilde img {
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+ 
+}
+
+.flex-item-right img, .flex-item-left img {
         border-radius: 50%;
-        width: 200px; /* Juster størrelsen etter behov */
-        height: 200px; /* Juster størrelsen etter behov */
-        display: block;
-        margin: 0 auto;
-    }
+   }
 
 
 
 
-    /*Kontakt oss*/
+
+
+
+/*Kontakt oss*/
 
 
 

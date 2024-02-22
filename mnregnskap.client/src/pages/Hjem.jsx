@@ -115,13 +115,14 @@ const Partnere = () => (
 
 const Møtoss = () => (
     <>
-        <h1 className="Møt-oss-overskrift">Møt oss</h1>
-        <div className="møt-oss-flex">
-            <div className="Møt-oss-bilde">
+    <h1 className="Møt-oss-overskrift">Møt oss</h1>
+        <div className="flex-container">
+            <div class="flex-item-left">
                 <img src="./Naila.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
+
             </div>
-            <div className="Møt-oss-bilde">
+            <div className="flex-item-right">
                 <img src="./Moosa.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
