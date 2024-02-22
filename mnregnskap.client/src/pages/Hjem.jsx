@@ -9,9 +9,17 @@ function Homepage() {
             <div className="regnskap-seksjon">
                 <Regnskap />
             </div>
+            <div className="Partnere-seksjon">
+                <Partnere />
+            </div>
+            <div className="Møt-oss-seksjon">
+                <Møtoss />
+            </div>
+            <div className="Kontakt-seksjon">
+                <Kontakt />
+            </div>
         </>
     );
-
 }
 
 
@@ -33,80 +41,96 @@ const Bildet = () => (
 
 const Regnskap = () => (
     <>
-
-        
-       
-     
-        <div class="framer-overskrift">
-            <h2 class="framer-text">Your Ambitions, Our Expertise – How Can We Support You?</h2>
+        <div className="framer-overskrift">
+            <h2 className="framer-text">Your Ambitions, Our Expertise – How Can We Support You?</h2>
         </div>
-        <div class="framer-boks">
-        <div class="framer-container">
-            <div class="framer-img">
-                <div data-framer-background-image-wrapper="true">
-                    <img src="/kalk.png" alt="regnskap &amp; �rsoppgj�r" loading="lazy"/>
+        <div className="framer-boks">
+            <div className="framer-container">
+                <div className="framer-img">
+                    <div data-framer-background-image-wrapper="true">
+                        <img src="/kalk.png" alt="regnskap &amp; �rsoppgj�r" loading="lazy" />
+                    </div>
+                </div>
+                <div className="framer-title">
+                    <h5 className="framer-text">Accounting</h5>
+                </div>
+                <div className="framer-text-container">
+                    <p className="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
                 </div>
             </div>
-            <div class="framer-title">
-                <h5 class="framer-text">Accounting</h5>
-            </div>
-            <div class="framer-text-container">
-                <p class="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
-            </div>
-        </div>
-            <div class="framer-container">
-                <div class="framer-img">
+            <div className="framer-container">
+                <div className="framer-img">
                     <div data-framer-background-image-wrapper="true">
                         <img src="/regn1.jpg" alt="regnskap &amp; �rsoppgj�r" loading="lazy" />
                     </div>
                 </div>
-                <div class="framer-title">
-                    <h5 class="framer-text">Accounting</h5>
+                <div className="framer-title">
+                    <h5 className="framer-text">Accounting</h5>
                 </div>
-                <div class="framer-text-container">
-                    <p class="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
+                <div className="framer-text-container">
+                    <p className="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
                 </div>
             </div>
-            <div class="framer-container">
-                <div class="framer-img">
+            <div className="framer-container">
+                <div className="framer-img">
                     <div data-framer-background-image-wrapper="true">
                         <img src="/regn2.jpg" alt="regnskap &amp; �rsoppgj�r" loading="lazy" />
                     </div>
                 </div>
-                <div class="framer-title">
-                    <h5 class="framer-text">Accounting</h5>
+                <div className="framer-title">
+                    <h5 className="framer-text">Accounting</h5>
                 </div>
-                <div class="framer-text-container">
-                    <p class="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
+                <div className="framer-text-container">
+                    <p className="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
                 </div>
             </div>
-            <div class="framer-container">
-                <div class="framer-img">
+            <div className="framer-container">
+                <div className="framer-img">
                     <div data-framer-background-image-wrapper="true">
                         <img src="/regn3.png" alt="regnskap &amp; �rsoppgj�r" loading="lazy" />
                     </div>
                 </div>
-                <div class="framer-title">
-                    <h5 class="framer-text">Accounting</h5>
+                <div className="framer-title">
+                    <h5 className="framer-text">Accounting</h5>
                 </div>
-                <div class="framer-text-container">
-                    <p class="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
+                <div className="framer-text-container">
+                    <p className="framer-text">Ongoing Bookkeeping, Year-End Statements, Tax Returns, and Reporting into Altinn.</p>
                 </div>
             </div>
-           
+
         </div>
-        <div class="framer-knapp">
-            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="/services">
-                <span class="c">
-                    <span class="elementor-button-text">Mer Info</span>
+        <div className="framer-knapp">
+            <a className="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="/services">
+                <span className="c">
+                    <span className="elementor-button-text">Mer Info</span>
                 </span>
             </a>
-
         </div>
-     
     </>
+);
 
+const Partnere = () => (
+    <></>
+);
 
+const Møtoss = () => (
+    <>
+        <h1 className="Møt-oss-overskrift">Møt oss</h1>
+        <div className="Møt-oss-flex">
+            <div className="Møt-oss-bilde">
+                <img src="./Moosa.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <p>STATSAUTORISERT REGNSKAPSFØRER</p>
+            </div>
+            <div className="Møt-oss-bilde">
+                <img src="./Naila.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <p>STATSAUTORISERT REGNSKAPSFØRER</p>
+            </div>
+        </div>
+    </>
+);
+
+const Kontakt = () => (
+    <></>
 );
 
 export default Homepage;

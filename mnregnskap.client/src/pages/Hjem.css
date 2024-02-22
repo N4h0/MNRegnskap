@@ -7,13 +7,14 @@
     object-fit: cover;
     image-rendering: auto;
 }
+
 .bilde-seksjon {
     border-radius: inherit;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 .bilde-seksjon-img {
@@ -60,7 +61,7 @@ h1 {
 
 .tekst-i-midten h4 {
     margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .tekst-i-midten .bildet-seksjon-knapp {
@@ -69,15 +70,13 @@ h1 {
 
 
 
-/*REgnskap delen*/
+/*Regnskap delen*/
 
 .framer-boks {
-   
-display:flex;
-justify-content:center;
-
- 
+    display: flex;
+    justify-content: center;
 }
+
 .framer-container {
     border-bottom-width: 4px;
     border-color: #e9ecef;
@@ -96,18 +95,20 @@ justify-content:center;
     justify-content: center; /* Plasserer innholdet vertikalt sentrert */
     align-items: center; /* Plasserer innholdet horisontalt sentrert */
     text-align: center; /* Sørger for at teksten er sentrert */
-    margin-left:40px;
-    margin-top:50px;
-    margin-bottom:40px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
+
 .framer-img img {
     max-width: 40px; /* Setter maksimal bredde til 100 piksler */
     max-height: 40px; /* Setter maksimal høyde til 100 piksler */
 }
 
-.framer-overskrift{
-    margin-top:50px;
+.framer-overskrift {
+    margin-top: 50px;
 }
+
 .elementor-button {
     background-color: #007bff; /* Blå bakgrunnsfarge */
     color: #fff; /* Hvit tekstfarge */
@@ -124,8 +125,27 @@ justify-content:center;
 }
 
 
-.framer-knapp{
-    margin-bottom:60px;
-    margin-top:30px;
+.framer-knapp {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+/*Møt oss*/
+
+.Møt-oss-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.Møt-oss-bilde {
+    flex: 0 0 calc(50%); /* Tek op 50% av breidda til felboksen*/
+    text-align: center;
+    max-width: 100%; 
+    height: auto;
+}
+
+.Møt-oss-bilde {
+    max-width: 100%; 
+    height: auto;
 }
 
