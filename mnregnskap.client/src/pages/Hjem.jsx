@@ -110,20 +110,26 @@ const Regnskap = () => (
 );
 
 const Partnere = () => (
-    <></>
+    <>
+        <div className="partnere-background">
+            <h1 className="partnere-overskrift">Våre partnere</h1>
+        </div>
+    </>
 );
 
 const Møtoss = () => (
     <>
-    <h1 className="Møt-oss-overskrift">Møt oss</h1>
+        <h1 className="Møt-oss-overskrift">Møt oss</h1>
         <div className="flex-container">
-            <div class="flex-item-left">
+            <div class="flex-item">
                 <img src="./Naila.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <h1>NAILA SOHAIL KHOKHAR</h1>
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
 
             </div>
-            <div className="flex-item-right">
+            <div className="flex-item">
                 <img src="./Moosa.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <h1>MOOSA ALI RASHID</h1>
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
         </div>
@@ -132,30 +138,14 @@ const Møtoss = () => (
 
 const Kontakt = () => (
     <>
-        <div class="image-container">
-            <div class="image-wrapper">
-                <img src="./bok.jpg" alt="" />
-            </div>
-            <div class="text-overlay">
-                <div class="title-container">
-                    <h1 class="title">Join Our Family of Talent</h1>
-                </div>
-                <div class="text-container">
-                    <h2 class="text">
-                      Concentrate on what you are good at - We take care of the accounts! Contact us for a no-obligation conversation.
-                    </h2>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-wrapper">
-                        <p class="contact-title">Kontakt Oss</p>
-                    </div>
-                </div>
+        <div className="kontakt-bilde">
+            <img src="./bok.jpg" alt="Bakgrunsbilde av noen regnskapsbøker som ligger oppå hverandre." />
+            <div className="Kontakt-tekstboks">
+                <h1>Join Our Family of Talent</h1>
+                <h2>Concentrate on what you are good at - We take care of the accounts! Contact us for a no-obligation conversation.</h2>
+                <p>Kontakt Oss</p>
             </div>
         </div>
-
-
-
-
     </>
 );
 
