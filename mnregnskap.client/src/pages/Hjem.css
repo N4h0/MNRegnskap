@@ -22,7 +22,6 @@
     width: 100%;
 }
 
-
 h1 {
     font-family: "Volkhov", serif;
     font-size: 60px;
@@ -57,8 +56,6 @@ h1 {
         background-color: white; /* Endre bakgrunnsfargen ved hover til svart */
     }
 
-
-
 .tekst-i-midten h4 {
     margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
     margin-top: 10px;
@@ -67,8 +64,6 @@ h1 {
 .tekst-i-midten .bildet-seksjon-knapp {
     margin-top: 30px; /* Legg til margin over knappen */
 }
-
-
 
 /*Regnskap delen*/
 
@@ -124,7 +119,6 @@ h1 {
     text-decoration: none;
 }
 
-
 .framer-knapp {
     margin-bottom: 60px;
     margin-top: 30px;
@@ -134,109 +128,106 @@ h1 {
 .flex-container {
     display: flex;
     flex-direction: row;
-    font-size: 30px;
-    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
-.flex-item-left {
+
+.flex-item {
     padding: 10px;
     flex: 50%;
+}
+
+.flex-item img {
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.flex-item-right {
-    padding: 10px;
-    flex: 50%;
- 
+.Møt-oss-overskrift {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
 }
 
-.flex-item-right img, .flex-item-left img {
-        border-radius: 50%;
-   }
+.flex-item h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
+.flex-item p {
+    font-size: 0.75rem; /* Størrelse til "STATSAUTORISERT REGNSKAPSFØRER" */
+}
 
+/*Våre partnere*/
 
-
-
+.partnere-background {
+    padding: 120px;
+    background-color: #f8ecdc;
+}
 
 
 /*Kontakt oss*/
 
+.kontakt-bilde {
+    display: flex;
+    position: relative; /*Absolut posisjon inne i boksen*/
+    overflow: hidden;
+}
 
-
-.image-wrapper img {
+.kontakt-bilde img {
     width: 100vw; /* Bredde tilsvarer 100% av vindusbredden */
     height: auto; /* Beholder bildets sideforhold */
-    max-height: 60vh; /* Begrenser maksimal høyde til 70% av vindushøyden */
+    max-height: 60vh; /* Begrenser maksimal høyde til 60% av vindushøyden */
     display: block; /* Fjerner eventuelle ekstra mellomrom under bildet */
     margin: 0; /* Fjerner marginer for å sikre at bildet tar hele bredden */
 }
 
-.image-container {
-    position: relative;
-    text-align: center;
-    color: white;
+.Kontakt-tekstboks {
+    position: absolute; /* Posisijonen til tekstboksen er absolutt (ikkje fleks, men fortsatt inne i ein fleksboks) */
+    left: 0; /* Fanger til venstre */
+    top: 10%;
+    width: 50%; /* bruker berre 50% av breidda */
+    padding-top: 30px; /* Padding rundt teksten */
+    padding-bottom: 20px;
 }
 
-
-
-.text-overlay {
-    position: absolute;
-    top: 100px;
-    left: 16px;
-    right:500px;
-}
-
-.text-overlay {
-  
-    display: flex;
-    flex-direction: column; /* Plasserer elementene i en rad */
-}
-.title {
-    font-size: 30px;
+.Kontakt-tekstboks h1 { /*Hovudtittel*/
     font-family: "Trocchi", "Trocchi Placeholder", serif;
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 20px;
-
     color: rgb(43, 43, 43);
     text-transform: uppercase;
 }
 
-.text-container {
+.Kontakt-tekstboks h2 { /*Brødtekst*/
+    padding-top: 50px; /*Avstand til overskrift*/
+    padding-bottom: 25px;
     color: black;
     font-size: 20px;
     height: auto;
-    left: 60px;
     pointer-events: auto;
-    position: absolute;
-    top: 100px;
     user-select: none;
     white-space: pre-wrap;
-    width: 765px;
     word-break: break-word;
     word-wrap: break-word;
-
-}
-.text {
     font-family: "Cormorant", "Cormorant Placeholder", serif;
     font-size: 31px;
     line-height: 40.3px;
     text-align: right;
     color: rgb(125, 75, 39);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; /* margin auto er nødvendig for at innhaldet blir senterert etter width:XX% */
 }
-.contact-container {
+
+.Kontakt-tekstboks p { /*Kontakt oss-knapp*/
+    display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
     border: 2.67px double #7d4b27;
     border-radius: 2px;
     background-color: #fcf7e5bf;
-    height: 73px;
-    position: absolute;
-    top:250px;
-    bottom: 147px;
-    left: 298px;
     box-shadow: 0 0 0 1px #333;
     overflow: visible;
-}
-.contact-title {
     font-family: "Cormorant", "Cormorant Placeholder", serif;
     font-size: 24px;
     font-weight: 600;
@@ -245,9 +236,5 @@ h1 {
     text-align: center;
     color: rgb(125, 75, 39);
     text-transform: uppercase;
+    padding: 20px 20px;
 }
-.contact-wrapper{
-    padding:20px 20px;
-}
-
-
