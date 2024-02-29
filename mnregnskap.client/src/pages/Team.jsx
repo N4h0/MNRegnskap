@@ -90,7 +90,8 @@ function Team() {
                 </div>
             </section>
             );
-        </> 
-        )}
+        </>
+    )
+}
 
 export default Team;

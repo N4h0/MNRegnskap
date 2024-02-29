@@ -1,0 +1,14 @@
+.Chat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.chatButton {
+    background-color: #F4A460;
+    height: 100%;
+    width: 100%;
+}

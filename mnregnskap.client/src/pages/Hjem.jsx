@@ -111,7 +111,7 @@ const Regnskap = () => (
 
 const Partnere = () => (
     <>
-        <div className="partnere-background">
+        <div className="partnere-bakgrunn">
             <h1 className="partnere-overskrift">Våre partnere</h1>
         </div>
     </>
