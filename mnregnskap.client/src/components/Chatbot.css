@@ -1,14 +1,87 @@
+/*Styling når chatten er lukka*/
 .Chat {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
 }
 
 .chatButton {
-    background-color: #F4A460;
+    background-color: #007bff;
     height: 100%;
     width: 100%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+/*Styling når chatten er åpen*/
+.chatDialog {
+    width: 300px;
+    height: 400px;
+    background-color: #fff; 
+}
+
+/*Chat-header*/
+.chatHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.closeChat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*Chat-body*/
+.chatBody {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.chatMessage, botMessage {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+
+/*Chat-footer*/
+.chatFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.messageInput {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.SendMessage {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px; /* Optional for styling */
 }
