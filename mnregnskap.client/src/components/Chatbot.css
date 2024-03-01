@@ -48,15 +48,21 @@
     background-color: #f8f9fa;
 }
 
-.chatMessage, botMessage {
-    background-color: #e9ecef;
+.chatMessage {
+    background-color: #007bff;
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 10px;
     word-wrap: break-word;
 }
 
-
+.botMessage {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
 /*Chat-footer*/
 .chatFooter {
     display: flex;
