@@ -1,51 +1,70 @@
+
 /*Styling når chatten er lukka*/
 .Chat {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    background: #fff;
+    z-index: 999;
+    border-radius: 50%;
 }
 
 .chatButton {
     background-color: #007bff;
-    height: 100%;
-    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
     cursor: pointer;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
 }
 
 /*Styling når chatten er åpen*/
 .chatDialog {
+    background-color: #fff;
     width: 300px;
-    height: 400px;
-    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/*Chat-header*/
+/* Chat-header */
 .chatHeader {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    background-color: #000; /* Endret til svart */
+    color: #fff; /* Endret tekstfarge til hvit */
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatHeader h2 {
+    margin: 0;
+    font-size: 18px;
 }
 
 .closeChat {
     background: none;
     border: none;
-    color: white;
-    font-size: 24px;
+    color: #fff;
     cursor: pointer;
 }
 
-/*Chat-body*/
+/* Chat-body */
 .chatBody {
     padding: 15px;
     height: 300px;
     overflow-y: auto;
-    background-color: #f8f9fa;
+    max-width: 80%; /* Legg til denne linjen for å begrense bredden */
+    margin: 0 auto; /* Sentrer containeren */
+}
+
+.chatMessage, .botMessage {
+    font-size: 14px;
 }
 
 .chatMessage {
@@ -66,24 +85,34 @@
 /*Chat-footer*/
 .chatFooter {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
 }
 
 .messageInput {
-    width: 80%;
-    padding: 10px;
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.messageInput {
+    width: 100%;
+    padding-right: 40px;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Legg til en understrek */
+    outline: none;
+    font-size: 16px;
 }
 
 .SendMessage {
-    background-color: #007bff;
-    color: white;
+    color: black;
     border: none;
-    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     display: flex;
