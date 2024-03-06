@@ -1,5 +1,5 @@
 h1, h4, h5 {
-    font-family: "Volkhov", serif;
+    font-family: "Times New Roman", serif;
 }
 
 h1 {
@@ -36,7 +36,7 @@ p {
 }
 
 .contact-us-page {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Times New Roman', serif;
 }
 
 .main-wrapper {
@@ -72,7 +72,8 @@ p {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    color: white;
+    /* skal egentlig bytte denne fargen til hvit senere */
+    color: #ff5c35;
     width: 52%;
     padding: 6rem 1rem;
     text-align: start;
@@ -189,12 +190,12 @@ a {
     width: calc(100% - 400px);
 }
 
-    .map-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+.map-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 @media (max-width:1024px) {
     .connect-body {
@@ -232,9 +233,9 @@ a {
     align-items: start;
 }
 
-    .detail-item span {
-        margin-bottom: 5px;
-    }
+.detail-item span {
+    margin-bottom: 5px;
+}
 
 .fax {
     display: flex;
@@ -252,12 +253,12 @@ a {
     margin-bottom: 8px;
 }
 
-    .form-input input {
-        width: 100%;
-        padding: 0.5625rem 0.625rem;
-    }
+.form-input input {
+    width: 100%;
+    padding: 0.5625rem 0.625rem;
+}
 
-    .form-input textarea {
-        width: 100%;
-        padding: 0.5625rem 0.625rem;
-    }
+.form-input textarea {
+    width: 100%;
+    padding: 0.5625rem 0.625rem;
+}

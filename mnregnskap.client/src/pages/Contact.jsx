@@ -30,18 +30,18 @@ function Contact() {
                         </div>
                         <div className="support-card second">
                             <img src={message} className="support-card-image" />
-                            <h4>Request a consultation</h4>
-                            <span>Concentrate on what youre good at - We take care of the accounts! Contact us for a no-obligation conversation.</span>
+                            <h4>Be om konsultasjon</h4>
+                            <span>Konsentrer deg om det du er god på – Vi tar oss av regnskapet!   Ta kontakt med oss for en uforpliktende samtale.</span>
                             <div className="form-input">
-                                <input type="text" className="input-name" placeholder="name" />
+                                <input type="text" className="input-name" placeholder="Navn" />
                             </div>
                             <div className="form-input">
-                                <input type="email" className="input-email" placeholder="email" />
+                                <input type="email" className="input-email" placeholder="Epost" />
                             </div>
                             <div className="form-input">
-                                <textarea placeholder="First type your organization number and then type your message*" />
+                                <textarea placeholder="Skriv først organisasjonsnummeret og følg deretter med meldingen" />
                             </div>
-                            <a className="btn-common">Submit</a>
+                            <a className="btn-common">Send Inn</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ function Contact() {
             <section className="connect">
                 <div className="main-wrapper">
                     <div className="connect-title">
-                        <h2 className="title">Connect with one of our global offices</h2>
+                        <h2 className="title">Skal vi ta det over en kopp kaffe? ☕️</h2>
                     </div>
                     <div className="connect-main">
                         <div className="connect-body">
@@ -58,22 +58,22 @@ function Contact() {
                             </div>
                             <div className="connect-detail">
                                 <div className="detail-item">
-                                    <h3>Headquarters</h3>
-                                    <span>2 Canal Park</span>
-                                    <span>Cambridge, MA 02141</span>
-                                    <span>United States</span>
+                                    <h3>Hovedkontor</h3>
+                                    <span>Vollaveien 20 A</span>
+                                    <span>Oslo, 0668</span>
+                                    <span>Norge</span>
                                 </div>
                                 <div className="detail-item">
-                                    <h5>Phone / Fax</h5>
-                                    <span>+ 1 888 MNRegnskap</span>
-                                    <span>(+1 888 482 7768)</span>
+                                    <h5>Ring oss</h5>
+                                    <span>+0047 MNRegnskap</span>
+                                    <span>(40 05 68 98)</span>
                                 </div>
                                 <div className="detail-item fax">
-                                    <span className="">Fax:</span>
-                                    <span> +1 617 812 5820</span>
+                                    <span className="">Addresse:</span>
+                                    <span> mn@mnregnskap.no</span>
                                 </div>
-                                <h5>Press / Media / Blogger Information</h5>
-                                <a>Visit our Newsroom for contact info</a>
+                                <h5>Organisasjons nummer:</h5>
+                                <a>992 720 999</a>
                             </div>
                         </div>
                     </div>

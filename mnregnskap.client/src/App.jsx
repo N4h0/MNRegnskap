@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 import Team from './pages/Team'
 
 
-//Må vere isntallert:
+//Mï¿½ vere isntallert:
 //react-router-dom: npm install react-router-dom
 //reactstrap: npm install reactstrap
 //font aveseome: npm install --save @fortawesome/react-fontawesome
