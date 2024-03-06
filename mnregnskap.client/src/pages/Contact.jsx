@@ -42,7 +42,7 @@ function Contact() {
                             <div className="form-input">
                                 <textarea placeholder="Skriv først organisasjonsnummeret og følg deretter med meldingen" />
                             </div>
-                            <a className="btn-common">Send Inn</a>
+                            <a className="btn-common" onlick="SendInn()">Send Inn</a>
                         </div>
                     </div>
                 </div>
