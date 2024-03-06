@@ -9,12 +9,12 @@ function Team() {
         <div className="bilde-seksjon-img">
             <img src="/index-bildet.jpg" alt="" className="img-style" />
             <div className="tekst-i-midten">
-                <h1>M&N</h1>
+                {/*<h1>M&N</h1>
                 <h1>REGNSKAP</h1>
                 <h4>Vi tar vare p&aring; regnskapet!</h4>
                 <div className="bildet-seksjon-knapp">
                     <button className="mer-info-knapp">MER INFO</button>
-                </div>
+                </div>*/}
             </div>
         </div>
 
