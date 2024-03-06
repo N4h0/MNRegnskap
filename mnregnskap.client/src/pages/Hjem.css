@@ -45,7 +45,7 @@
 .bildeKnapp {
     padding: 10px 30px;
     font-size: 0.9rem;
-    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    background-color: transparent; /* Gjï¿½r bakgrunnen gjennomsiktig */
     color: black;
     border: 2px solid black; /* Legg til en svart border */
     border-radius: 15px;
@@ -93,7 +93,7 @@
     flex-direction: column;
     justify-content: center; /* Plasserer innholdet vertikalt sentrert */
     align-items: center; /* Plasserer innholdet horisontalt sentrert */
-    text-align: center; /* Sørger for at teksten er sentrert */
+    text-align: center; /* Sï¿½rger for at teksten er sentrert */
     margin-left: 40px;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -105,7 +105,7 @@
 }
 
 .regnskapsKnapp {
-    background-color: #007bff; /* Blå bakgrunnsfarge */
+    background-color: #007bff; /* Blï¿½ bakgrunnsfarge */
     color: #fff; /* Hvit tekstfarge */
     border: 2px solid #007bff; /* 2 piksler bred solid svart grense */
     font-size: 100%;
@@ -121,8 +121,8 @@
 .regnskapsKnappTekst {
     color: #FFF;
 }
-/*Møt oss*/
-.møtOssSeksjon h1 {
+/*Mï¿½t oss*/
+.mï¿½tOssSeksjon h1 {
     padding-bottom: 20px;
     text-align: center;
     font-size: 2rem;
@@ -152,10 +152,10 @@
 }
 
 .kontaktOssKort p {
-    font-size: 0.75rem; /* Størrelse til "STATSAUTORISERT REGNSKAPSFØRER" */
+    font-size: 0.75rem; /* Stï¿½rrelse til "STATSAUTORISERT REGNSKAPSFï¿½RER" */
 }
 
-/*Våre partnere*/
+/*Vï¿½re partnere*/
 
 .partnereBakgrunn {
     padding: 120px;
@@ -176,9 +176,9 @@
 .kontaktBilde img {
     width: 100vw; /* Bredde tilsvarer 100% av vindusbredden */
     height: auto; /* Beholder bildets sideforhold */
-    max-height: 60vh; /* Begrenser maksimal høyde til 60% av vindushøyden */
+    max-height: 60vh; /* Begrenser maksimal hï¿½yde til 60% av vindushï¿½yden */
     display: block; /* Fjerner eventuelle ekstra mellomrom under bildet */
-    margin: 0; /* Fjerner marginer for å sikre at bildet tar hele bredden */
+    margin: 0; /* Fjerner marginer for ï¿½ sikre at bildet tar hele bredden */
 }
 
 .kontaktTekstboks {
@@ -199,7 +199,7 @@
     text-transform: uppercase;
 }
 
-.kontaktTekstboks h2 { /*Brødtekst*/
+.kontaktTekstboks h2 { /*Brï¿½dtekst*/
     padding-top: 50px; /*Avstand til overskrift*/
     padding-bottom: 25px;
     color: black;
@@ -217,7 +217,7 @@
     color: rgb(125, 75, 39);
     width: 80%;
     margin-left: auto;
-    margin-right: auto; /* margin auto er nødvendig for at innhaldet blir senterert etter width:XX% */
+    margin-right: auto; /* margin auto er nï¿½dvendig for at innhaldet blir senterert etter width:XX% */
 }
 
 .kontaktTekstboks p { /*Kontakt oss-knapp*/

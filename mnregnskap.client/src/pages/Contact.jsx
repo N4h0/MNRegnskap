@@ -11,8 +11,9 @@ function Contact() {
                 <div className="main-wrapper">
                     <div className="hero-body">
                         <div className="hero-text">
-                            <h1 className="hero-heading">Get in touch</h1>
-                            <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
+                            <h1 className="hero-heading">Har du noe på hjertet?</h1>
+                            <p>Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -22,11 +23,11 @@ function Contact() {
                     <div className="supports">
                         <div className="support-card first">
                             <img src={phone} className="support-card-image" />
-                            <h4>Talk to Sales</h4>
-                            <span>Interested in MNRegnskap's software? Just pick up the phone to chat with a member of our sales team.</span>
-                            <a>+1 857 829 5060</a>
-                            <h4>Contact Customer Support</h4>
-                            <span>Sometimes you need a little help from your friends. Or a MNRegnskap support rep. Don't worry... we're here for you.</span>
+                            <h4>Snakk med oss</h4>
+                            <span>Din tilbakemelding er viktig for oss. Vi er klare til å lytte og finne løsninger sammen.</span>
+                            <a>+0047 40 05 68 98</a>
+                            <h4>Når en er i nød:</h4>
+                            <span>.. trenger man litt hjelp fra venner... eller MN Regnskap support. Ikke overtenk... vi er her for deg.</span>
                         </div>
                         <div className="support-card second">
                             <img src={message} className="support-card-image" />

@@ -28,7 +28,7 @@ span {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.75;
     margin-top: 1em;
@@ -73,7 +73,7 @@ p {
     justify-content: start;
     align-items: start;
     /* skal egentlig bytte denne fargen til hvit senere */
-    color: #ff5c35;
+    color: #ffffff;
     width: 52%;
     padding: 6rem 1rem;
     text-align: start;
