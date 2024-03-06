@@ -69,11 +69,13 @@ function Chatbot() {
             {!isOpen && (
                 <button className="chatButton" onClick={toggleChat}>
                     <FontAwesomeIcon icon={faCommentDots} />
+
                 </button>
             )}
             {isOpen && (
                 <div className="chatDialog">
                     <div className="chatHeader">
+                        <h2>Chat med oss!</h2>
                         <button className="closeChat" onClick={toggleChat}>
                             <FontAwesomeIcon icon={faTimes} />
                         </button>
@@ -88,7 +90,7 @@ function Chatbot() {
                     <div className="chatFooter">
                         <input type="text"
                             className="messageInput"
-                            placeholder="Send en melding..."
+                            placeholder="Skriv inn meldingen din ..."
                             value={message}
                             onChange={handleInputChange} //Oppdaterer message kvar gong det er gjort ein input.
                             onKeyDown={handleKeyPress} />

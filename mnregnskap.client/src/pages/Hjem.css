@@ -8,7 +8,7 @@
     image-rendering: auto;
 }
 
-.bilde-seksjon {
+.bildeSeksjon {
     border-radius: inherit;
     top: 0;
     right: 0;
@@ -17,32 +17,32 @@
     width: 100%;
 }
 
-.bilde-seksjon-img {
+.bildeSeksjon img {
     position: relative;
     width: 100%;
 }
 
-h1 {
+.bildeSeksjon h1 {
     font-family: "Volkhov", serif;
     font-size: 60px;
     line-height: 55px;
     text-align: center;
 }
 
-.tekst-i-midten {
+.bildeTekst {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 30px
 }
 
-    .tekst-i-midten h1,
-    .tekst-i-midten h4 {
-        margin: 0;
-    }
+.bildeTekst h1, h4 {
+    margin: 0;
+}
 
-.mer-info-knapp {
+.bildeKnapp {
     padding: 10px 30px;
     font-size: 0.9rem;
     background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
@@ -52,27 +52,31 @@ h1 {
     cursor: pointer;
 }
 
-    .mer-info-knapp:hover {
-        background-color: white; /* Endre bakgrunnsfargen ved hover til svart */
-    }
+.bildeKnapp:hover {
+    background-color: white; /* Endre bakgrunnsfargen ved hover til svart */
+}
 
-.tekst-i-midten h4 {
+.bildeTekst h4 {
     margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
     margin-top: 10px;
 }
 
-.tekst-i-midten .bildet-seksjon-knapp {
+.bildeKnapp {
     margin-top: 30px; /* Legg til margin over knappen */
 }
 
 /*Regnskap delen*/
 
-.framer-boks {
+.regnskapsSeksjon h2 {
+    margin-top: 50px;
+}
+
+.regnskapsBoks {
     display: flex;
     justify-content: center;
 }
 
-.framer-container {
+.regnskapsKort {
     border-bottom-width: 4px;
     border-color: #e9ecef;
     border-left-width: 4px;
@@ -95,16 +99,12 @@ h1 {
     margin-bottom: 40px;
 }
 
-.framer-img img {
-    max-width: 40px; /* Setter maksimal bredde til 100 piksler */
-    max-height: 40px; /* Setter maksimal høyde til 100 piksler */
+.regnskapsSeksjon img {
+    max-width: 40px;
+    max-height: 40px;
 }
 
-.framer-overskrift {
-    margin-top: 50px;
-}
-
-.elementor-button {
+.regnskapsKnapp {
     background-color: #007bff; /* Blå bakgrunnsfarge */
     color: #fff; /* Hvit tekstfarge */
     border: 2px solid #007bff; /* 2 piksler bred solid svart grense */
@@ -114,18 +114,21 @@ h1 {
     border-radius: 6px;
     height: 44px;
     line-height: 1.15;
-    margin: 12px 0 0;
     padding: 20px 60px;
-    text-decoration: none;
+    margin-bottom: 20px;
 }
 
-.framer-knapp {
-    margin-bottom: 60px;
-    margin-top: 30px;
+.regnskapsKnappTekst {
+    color: #FFF;
 }
-
 /*Møt oss*/
-.flex-container {
+.møtOssSeksjon h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.kontaktOssBoks {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,48 +136,44 @@ h1 {
     padding-top: 20px;
 }
 
-.flex-item {
+.kontaktOssKort {
     padding: 10px;
     flex: 50%;
 }
 
-.flex-item img {
+.kontaktOssKort img {
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.Møt-oss-overskrift {
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.flex-item h1 {
+.kontaktOssKort h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.flex-item p {
+.kontaktOssKort p {
     font-size: 0.75rem; /* Størrelse til "STATSAUTORISERT REGNSKAPSFØRER" */
 }
 
 /*Våre partnere*/
 
-.partnere-bakgrunn {
+.partnereBakgrunn {
     padding: 120px;
     background-color: #f8ecdc;
 }
-
+.partnereSeksjon{
+    margin-top:40px;
+}
 
 /*Kontakt oss*/
 
-.kontakt-bilde {
+.kontaktBilde {
     display: flex;
     position: relative; /*Absolut posisjon inne i boksen*/
     overflow: hidden;
 }
 
-.kontakt-bilde img {
+.kontaktBilde img {
     width: 100vw; /* Bredde tilsvarer 100% av vindusbredden */
     height: auto; /* Beholder bildets sideforhold */
     max-height: 60vh; /* Begrenser maksimal høyde til 60% av vindushøyden */
@@ -182,7 +181,7 @@ h1 {
     margin: 0; /* Fjerner marginer for å sikre at bildet tar hele bredden */
 }
 
-.Kontakt-tekstboks {
+.kontaktTekstboks {
     position: absolute; /* Posisijonen til tekstboksen er absolutt (ikkje fleks, men fortsatt inne i ein fleksboks) */
     left: 0; /* Fanger til venstre */
     top: 10%;
@@ -191,7 +190,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-.Kontakt-tekstboks h1 { /*Hovudtittel*/
+.kontaktTekstboks h1 { /*Hovudtittel*/
     font-family: "Trocchi", "Trocchi Placeholder", serif;
     font-size: 22px;
     letter-spacing: 2px;
@@ -200,7 +199,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.Kontakt-tekstboks h2 { /*Brødtekst*/
+.kontaktTekstboks h2 { /*Brødtekst*/
     padding-top: 50px; /*Avstand til overskrift*/
     padding-bottom: 25px;
     color: black;
@@ -221,7 +220,7 @@ h1 {
     margin-right: auto; /* margin auto er nødvendig for at innhaldet blir senterert etter width:XX% */
 }
 
-.Kontakt-tekstboks p { /*Kontakt oss-knapp*/
+.kontaktTekstboks p { /*Kontakt oss-knapp*/
     display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
     border: 2.67px double #7d4b27;
     border-radius: 2px;
