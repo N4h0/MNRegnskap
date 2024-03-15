@@ -80,13 +80,13 @@ const Møtoss = () => (
         <h1>Møt oss</h1>
         <div className="kontaktOssBoks">
             <div className="kontaktOssKort">
-                <img src="./Naila.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
-                <h1>NAILA SOHAIL KHOKHAR</h1>
+                <img src="./Moosa.png" alt="Bilde av Moosa som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <h1>MOOSA ALI RASHID</h1>
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
             <div className="kontaktOssKort">
-                <img src="./Moosa.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
-                <h1>MOOSA ALI RASHID</h1>
+                <img src="./Naila.png" alt="Bilde av Naila som er en av grunnleggerene til M&N regnskap (Statsautorisert regnskapsfører)" />
+                <h1>NAILA SOHAIL KHOKHAR</h1>
                 <p>STATSAUTORISERT REGNSKAPSFØRER</p>
             </div>
         </div>
