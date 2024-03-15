@@ -16,7 +16,7 @@ import Team from './pages/Team'
 //react-router-dom: npm install react-router-dom
 //reactstrap: npm install reactstrap
 //font aveseome: npm install --save @fortawesome/react-fontawesome
-//font aweosme icon: npm install--save @fortawesome/free-solid-svg-icons
+//font aweosme icon: npm install --save @fortawesome/free-solid-svg-icons
 
 function App() {
     return (

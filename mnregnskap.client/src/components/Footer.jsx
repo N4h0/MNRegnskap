@@ -34,8 +34,8 @@ const Footer = () => {
 const Godkjenn = () => (
     <div className="ast-col-lg-3 ast-col-md-3 ast-col-sm-12 ast-col-xs-12 footer-adv-widget footer-adv-widget-2">
         <div id="media_image-5" className="widget widget_media_image">
-            <h2 className="widget-title">godkjenninger</h2>
-            <img width="300" height="207" src="/medlem-sort.png" alt="" />
+            <h2 className="widget-title">Godkjenninger</h2>
+            <img width="290" height="150" src="/medlem-sort.png" alt="" />
         </div>
     </div>
 );
@@ -77,7 +77,7 @@ const ContactInfo = () => (
 
 const Copyright = () => (
     <div className="ast-small-footer-section ast-small-footer-section-1 ast-small-footer-section-equally ast-col-md-6">
-        <p>Opphavsrett © {new Date().getFullYear()} M&N Regnskap. All rights reserved.</p>
+        <p>. Opphavsrett Â© {new Date().getFullYear()} M&N Regnskap. All rights reserved.</p>
     </div>
 );
 
