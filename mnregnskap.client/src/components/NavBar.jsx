@@ -44,7 +44,12 @@ export default class NavBar extends Component {
                                 <NavLink tag={Link} className="text-dark nav-link" to="/team">
                                     <p className="nav-link-text">V&aring;rt team</p>
                                 </NavLink>
-                            </NavItem>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/link">
+                                <p className="nav-link-text">Frister</p>
+                            </NavLink>
+                        </NavItem>
                             <NavItem>
                                 <NavLink tag={Link} className="text-dark nav-link" to="/contact">
                                     <p className="nav-link-text">Kontakt oss</p>
