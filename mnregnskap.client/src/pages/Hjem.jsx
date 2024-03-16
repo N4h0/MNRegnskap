@@ -1,4 +1,4 @@
-﻿import React from 'react';
+﻿import React, { useEffect } from 'react';
 import './Hjem.css';
 
 function Homepage() {
@@ -68,14 +68,50 @@ const Regnskap = () => (
     </>
 );
 
-const Partnere = () => (
-    <>
-        <div className="partnereBakgrunn">
-            <h1>Våre Partnere</h1>
-        </div>
-    </>
-);
+const Partnere = () => {
+    // Bruk useEffect til å kjøre JavaScript-koden ved lasting av komponenten
+    useEffect(() => {
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    }, []); // Pass an empty array as second argument to run this effect only once after the component mounts
 
+    // JSX-koden
+    return (
+        <div className="partnereBakgrunn">
+            <h2 className="text-center font-weight-bold">Våre partnere</h2>
+            <section className="customer-logos slider">
+                <div className="slide"><img src="./adidas.png" alt="logo" /></div>
+                <div className="slide"><img src="./facebook.png" alt="logo" /></div>
+                <div className="slide"><img src="./google.png" alt="logo" /></div>
+                <div className="slide"><img src="./instagram.png" alt="logo" /></div>
+                <div className="slide"><img src="./nike.png" alt="logo" /></div>
+                <div className="slide"><img src="./twitter.png" alt="logo" /></div>
+                <div className="slide"><img src="./uber.png" alt="logo" /></div>
+                <div className="slide"><img src="./youtube.png" alt="logo" /></div>
+            </section>
+        </div>
+    );
+}
 const Møtoss = () => (
     <>
         <h1>Møt Oss</h1>
