@@ -18,13 +18,13 @@ export default class NavBar extends Component {
             language: 'en' // Setter standard språk til engelsk
         };
     }
-
+    // Metode for å bytte visning av navigasjonsmenyen
     toggleNavbar() {
         this.setState({
             collapsed: !this.state.collapsed
         });
     }
-
+    //Metode for å bytte språk
     changeLanguage = (language) => {
         this.setState({ language });
     }
