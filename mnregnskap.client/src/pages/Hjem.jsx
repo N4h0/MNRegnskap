@@ -1,29 +1,57 @@
-﻿import React, { useEffect } from 'react';
+﻿import React, { Component } from 'react';
+import { NavItem } from 'reactstrap';
 import './Hjem.css';
+import PropTypes from 'prop-types';
+import enData from '../languages/en.json';
+import noData from '../languages/no.json';
 
-function Homepage() {
-    return (
-        <>
-            <div className="bildeSeksjon">
-                <Bildet />
-            </div>
-            <div className="regnskapsSeksjon">
-                <Regnskap />
-            </div>
-            <div className="partnereSeksjon">
-                <Partnere />
-            </div>
-            <div className="møtOssSeksjon">
-                <Møtoss />
-            </div>
-            <div className="kontaktSeksjon">
-                <Kontakt />
-            </div>
-        </>
-    );
+class Homepage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            language: 'en' // Set default language to English
+        };
+    }
+
+    changeLanguage = (language) => {
+        this.setState({ language });
+    }
+
+    render() {
+        const { language } = this.state;
+        const languageData = language === 'en' ? enData : noData;
+
+
+        return (
+            <>
+                {/* Passing prop to the components */ }
+                <div className="bildeSeksjon">
+                    <Bildet languageData={languageData} />
+                </div>
+                <div className="regnskapsSeksjon">
+                    <Regnskap languageData={languageData} />
+                </div>
+                <div className="partnereSeksjon">
+                    <Partnere languageData={languageData} />
+                </div>
+                <div className="møtOssSeksjon">
+                    <Møtoss languageData={languageData} />
+                </div>
+                <div className="kontaktSeksjon">
+                    <Kontakt languageData={languageData} />
+                </div>
+                <div className="language-selector">
+                    <NavItem>
+                        <button onClick={() => this.changeLanguage('en')}>English</button>
+                        <button onClick={() => this.changeLanguage('no')}>Norsk</button>
+                    </NavItem>
+                </div>
+            </>
+        );
+    }
 }
 
-const Bildet = () => (
+const Bildet = ({ languageData }) => (
     <>
         <img src="/hjem-bildet.jpg" alt="" className="img-style" />
         <div className="bildeTekst">
@@ -37,9 +65,10 @@ const Bildet = () => (
     </>
 );
 
-const Regnskap = () => (
+
+const Regnskap = ({ languageData }) => (
     <>
-        <h2>Dine Ambisjoner, Vår Ekspertise – Hvordan Kan Vi Støtte Deg?</h2>
+        <h2> {languageData.how_can_we_support_you}</h2>
         <div className="regnskapsBoks">
             <div className="regnskapsKort">
                 <img src="/kalk.png" alt="" loading="lazy" />
@@ -68,6 +97,8 @@ const Regnskap = () => (
     </>
 );
 
+const Partnere = ({ languageData }) => (
+    <>
 const Partnere = () => {
     // Bruk useEffect til å kjøre JavaScript-koden ved lasting av komponenten
     useEffect(() => {
@@ -98,6 +129,7 @@ const Partnere = () => {
     // JSX-koden
     return (
         <div className="partnereBakgrunn">
+            <h1>{languageData.our_partners}</h1>
             <h2 className="text-center font-weight-bold">Våre partnere</h2>
             <section className="customer-logos slider">
                 <div className="slide"><img src="./adidas.png" alt="logo" /></div>
@@ -110,37 +142,55 @@ const Partnere = () => {
                 <div className="slide"><img src="./youtube.png" alt="logo" /></div>
             </section>
         </div>
-    );
-}
-const Møtoss = () => (
+    </>
+);
+
+const Møtoss = ({ languageData }) => (
     <>
-        <h1>Møt Oss</h1>
+        <h1>{languageData.meet_us}</h1>
         <div className="kontaktOssBoks">
             <div className="kontaktOssKort">
                 <img src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                 <h1>MOOSA ALI RASHID</h1>
-                <p>STATSAUTORISERT REGNSKAPSFØRER</p>
+                <p>{languageData.chartered_accountant}</p>
             </div>
             <div className="kontaktOssKort">
                 <img src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                 <h1>NAILA SOHAIL KHOKHAR</h1>
-                <p>STATSAUTORISERT REGNSKAPSFØRER</p>
+                <p>{languageData.chartered_accountant}</p>
             </div>
         </div>
     </>
 );
 
-const Kontakt = () => (
+const Kontakt = ({ languageData }) => (
     <>
         <div className="kontaktBilde">
             <img src="./bok.jpg" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
             <div className="kontaktTekstboks">
-                <h1>Bli Med i Vår Talentfamilie</h1>
-                <h2>Konsentrer deg om det du er god på - Vi tar oss av regnskapet! Kontakt oss for en uforpliktende samtale.</h2>
-                <p>Kontakt Oss</p>
+                <h1>{languageData.join_us}</h1>
+                <h2>{languageData.contact_us_conversation}</h2>
+                <p>{languageData.contact_us}</p>
             </div>
         </div>
     </>
 );
 
+// PropTypes are used to validate the prop values passed to our components
+Bildet.propTypes = {
+    languageData: PropTypes.object.isRequired
+};
+Regnskap.propTypes = {
+    languageData: PropTypes.object.isRequired
+};
+Partnere.propTypes = {
+    languageData: PropTypes.object.isRequired
+};
+Møtoss.propTypes = {
+    languageData: PropTypes.object.isRequired
+};
+
+Kontakt.propTypes = {
+    languageData: PropTypes.object.isRequired
+};
 export default Homepage;

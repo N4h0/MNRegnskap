@@ -48,11 +48,6 @@ export default class NavBar extends Component {
                             <p className="nav-link-text">{languageData.home}</p>
                         </NavLink>
                         <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/about">
-                                <p className="nav-link-text">{languageData.about_us}</p>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
                             <NavLink tag={Link} className="text-dark nav-link" to="/team">
                                 <p className="nav-link-text">{languageData.our_team}</p>
                             </NavLink>
@@ -75,6 +70,7 @@ export default class NavBar extends Component {
                                 <button onClick={() => this.changeLanguage('no')}>Norsk</button>
                             </div>
                         </NavItem>
+                        
                     </ul>
                 </Collapse>
             </Navbar>

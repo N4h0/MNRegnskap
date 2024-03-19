@@ -7,7 +7,6 @@ import Chatbot from './components/Chatbot';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hjem from './pages/Hjem';
-import About from './pages/About';
 import Contact from './pages/Contact';
 import Link from './pages/Link';
 import Team from './pages/Team'
@@ -27,7 +26,6 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Hjem />} />
                     <Route path="/Team" element={<Team />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/Link" element={<Link />} />
                     <Route path="/Hjem" element={<Hjem />} />
