@@ -1,101 +1,88 @@
-﻿import React, { Component } from 'react';
-import { NavItem } from 'reactstrap';
+﻿import React, { useContext, useEffect } from 'react';
+import { LanguageContext } from '../languages/LanguageContext'; // Juster stien etter hvor din LanguageContext befinner seg
+
 import './Hjem.css';
-import PropTypes from 'prop-types';
-import enData from '../languages/en.json';
-import noData from '../languages/no.json';
+// Importer dine språkdatafiler (eller håndter det som passer best for din app-struktur)
+import en from '../languages/en.json'; // Engelsk språkdata
+import no from '../languages/no.json'; // Norsk språkdata
 
-class Homepage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            language: 'en' // Set default language to English
-        };
-    }
+function Homepage() {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
-    changeLanguage = (language) => {
-        this.setState({ language });
-    }
-
-    render() {
-        const { language } = this.state;
-        const languageData = language === 'en' ? enData : noData;
-
-
-        return (
-            <>
-                {/* Passing prop to the components */ }
-                <div className="bildeSeksjon">
-                    <Bildet languageData={languageData} />
-                </div>
-                <div className="regnskapsSeksjon">
-                    <Regnskap languageData={languageData} />
-                </div>
-                <div className="partnereSeksjon">
-                    <Partnere languageData={languageData} />
-                </div>
-                <div className="møtOssSeksjon">
-                    <Møtoss languageData={languageData} />
-                </div>
-                <div className="kontaktSeksjon">
-                    <Kontakt languageData={languageData} />
-                </div>
-                <div className="language-selector">
-                    <NavItem>
-                        <button onClick={() => this.changeLanguage('en')}>English</button>
-                        <button onClick={() => this.changeLanguage('no')}>Norsk</button>
-                    </NavItem>
-                </div>
-            </>
-        );
-    }
+    return (
+        <>
+            <div className="bildeSeksjon">
+                <Bildet language={language} />
+            </div>
+            <div className="regnskapsSeksjon">
+                <Regnskap language={language} />
+            </div>
+            <div className="partnereSeksjon">
+                <Partnere language={language} />
+            </div>
+            <div className="møtOssSeksjon">
+                <Møtoss language={language} />
+            </div>
+            <div className="kontaktSeksjon">
+                <Kontakt language={language} />
+            </div>
+        </>
+    );
 }
 
-const Bildet = ({ languageData }) => (
-    <>
-        <img src="/hjem-bildet.jpg" alt="" className="img-style" />
-        <div className="bildeTekst">
-            <h1>M&N</h1>
-            <h1>REGNSKAP</h1>
-            <h4>Vi tar vare på regnskapet!</h4>
-            <a href="/om">
-                <button className="bildeKnapp">MER INFO</button>
+function Bildet({ language }) {
+    const textData = language === 'norsk' ? no : en;
+
+    return (
+        <>
+            <img src="/hjem-bildet.jpg" alt="" className="img-style" />
+            <div className="bildeTekst">
+                <h1>M&N</h1>
+                <h1>{textData.regnskap}</h1>
+                <h4>{textData.home_page_text}</h4>
+                <a href="/om">
+                    <button className="bildeKnapp">{textData.more_info}</button>
+                </a>
+            </div>
+        </>
+    );
+}
+
+
+function Regnskap({ language }) {
+    const textData = language === 'norsk' ? no : en;
+
+    return (
+        <>
+            <h2>{textData.ambitions_expertise}</h2>
+            <div className="regnskapsBoks">
+                <div className="regnskapsKort">
+                    <img src="/kalk.png" alt="" loading="lazy" />
+                    <h3>{textData.accounting}</h3>
+                    <p>{textData.accounting_description}</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn1.jpg" alt="" loading="lazy" />
+                    <h3>Rådgivning</h3>
+                    <p>Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn2.jpg" alt="" loading="lazy" />
+                    <h3>Skattemelding for personer</h3>
+                    <p>Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn3.png" alt="" loading="lazy" />
+                    <h3>Budsjettlegging</h3>
+                    <p>Vi fakturerer på dine vegne, enten elektronisk eller per post.</p>
+                </div>
+            </div>
+            <a className="regnskapsKnapp" href="/om">
+                <span className="regnskapsKnappTekst">Mer Info</span>
             </a>
-        </div>
-    </>
-);
-
-
-const Regnskap = ({ languageData }) => (
-    <>
-        <h2> {languageData.how_can_we_support_you}</h2>
-        <div className="regnskapsBoks">
-            <div className="regnskapsKort">
-                <img src="/kalk.png" alt="" loading="lazy" />
-                <h3>Regnskap</h3>
-                <p>Løpende bokføring, Årsoppgjør, Skattemelding og Rapportering til Altinn.</p>
-            </div>
-            <div className="regnskapsKort">
-                <img src="/regn1.jpg" alt="" loading="lazy" />
-                <h3>Rådgivning</h3>
-                <p>Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.</p>
-            </div>
-            <div className="regnskapsKort">
-                <img src="/regn2.jpg" alt="" loading="lazy" />
-                <h3>Skattemelding for personer</h3>
-                <p>Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.</p>
-            </div>
-            <div className="regnskapsKort">
-                <img src="/regn3.png" alt="" loading="lazy" />
-                <h3>Budsjettlegging</h3>
-                <p>Vi fakturerer på dine vegne, enten elektronisk eller per post.</p>
-            </div>
-        </div>
-        <a className="regnskapsKnapp" href="/om">
-            <span className="regnskapsKnappTekst">Mer Info</span>
-        </a>
-    </>
-);
+        </>
+    );
+}
 
 const Partnere = ({ languageData }) => (
     <>
@@ -176,21 +163,4 @@ const Kontakt = ({ languageData }) => (
     </>
 );
 
-// PropTypes are used to validate the prop values passed to our components
-Bildet.propTypes = {
-    languageData: PropTypes.object.isRequired
-};
-Regnskap.propTypes = {
-    languageData: PropTypes.object.isRequired
-};
-Partnere.propTypes = {
-    languageData: PropTypes.object.isRequired
-};
-Møtoss.propTypes = {
-    languageData: PropTypes.object.isRequired
-};
-
-Kontakt.propTypes = {
-    languageData: PropTypes.object.isRequired
-};
 export default Homepage;
