@@ -38,7 +38,7 @@ function Bildet({ language }) {
             <img src="/hjem-bildet.jpg" alt="" className="img-style" />
             <div className="bildeTekst">
                 <h1>M&N</h1>
-                <h1>{textData.regnskap}</h1> 
+                <h1>{textData.regnskap}</h1>
                 <h4>{textData.home_page_text}</h4>
                 <a href="/om">
                     <button className="bildeKnapp">{textData.more_info}</button>
@@ -55,33 +55,33 @@ function Regnskap({ language }) {
     return (
         <>
             <h2>{textData.ambitions_expertise}</h2>
-        <div className="regnskapsBoks">
-            <div className="regnskapsKort">
-                <img src="/kalk.png" alt="" loading="lazy" />
+            <div className="regnskapsBoks">
+                <div className="regnskapsKort">
+                    <img src="/kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
                     <p>{textData.accounting_description}</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn1.jpg" alt="" loading="lazy" />
+                    <h3>Rådgivning</h3>
+                    <p>Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn2.jpg" alt="" loading="lazy" />
+                    <h3>Skattemelding for personer</h3>
+                    <p>Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.</p>
+                </div>
+                <div className="regnskapsKort">
+                    <img src="/regn3.png" alt="" loading="lazy" />
+                    <h3>Budsjettlegging</h3>
+                    <p>Vi fakturerer på dine vegne, enten elektronisk eller per post.</p>
+                </div>
             </div>
-            <div className="regnskapsKort">
-                <img src="/regn1.jpg" alt="" loading="lazy" />
-                <h3>Rådgivning</h3>
-                <p>Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.</p>
-            </div>
-            <div className="regnskapsKort">
-                <img src="/regn2.jpg" alt="" loading="lazy" />
-                <h3>Skattemelding for personer</h3>
-                <p>Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.</p>
-            </div>
-            <div className="regnskapsKort">
-                <img src="/regn3.png" alt="" loading="lazy" />
-                <h3>Budsjettlegging</h3>
-                <p>Vi fakturerer på dine vegne, enten elektronisk eller per post.</p>
-            </div>
-        </div>
-        <a className="regnskapsKnapp" href="/om">
-            <span className="regnskapsKnappTekst">Mer Info</span>
-        </a>
-    </>
-);
+            <a className="regnskapsKnapp" href="/om">
+                <span className="regnskapsKnappTekst">Mer Info</span>
+            </a>
+        </>
+    );
 }
 
 const Partnere = () => {
