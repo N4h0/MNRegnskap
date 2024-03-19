@@ -1,50 +1,65 @@
-﻿import React, { useEffect } from 'react';
+﻿import React, { useContext, useEffect } from 'react';
+import { LanguageContext } from '../languages/LanguageContext'; // Juster stien etter hvor din LanguageContext befinner seg
+
 import './Hjem.css';
+// Importer dine språkdatafiler (eller håndter det som passer best for din app-struktur)
+import en from '../languages/en.json'; // Engelsk språkdata
+import no from '../languages/no.json'; // Norsk språkdata
 
 function Homepage() {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+
     return (
         <>
             <div className="bildeSeksjon">
-                <Bildet />
+                <Bildet language={language} />
             </div>
             <div className="regnskapsSeksjon">
-                <Regnskap />
+                <Regnskap language={language} />
             </div>
             <div className="partnereSeksjon">
-                <Partnere />
+                <Partnere language={language} />
             </div>
             <div className="møtOssSeksjon">
-                <Møtoss />
+                <Møtoss language={language} />
             </div>
             <div className="kontaktSeksjon">
-                <Kontakt />
+                <Kontakt language={language} />
             </div>
         </>
     );
 }
 
-const Bildet = () => (
-    <>
-        <img src="/hjem-bildet.jpg" alt="" className="img-style" />
-        <div className="bildeTekst">
-            <h1>M&N</h1>
-            <h1>REGNSKAP</h1>
-            <h4>Vi tar vare på regnskapet!</h4>
-            <a href="/om">
-                <button className="bildeKnapp">MER INFO</button>
-            </a>
-        </div>
-    </>
-);
+function Bildet({ language }) {
+    const textData = language === 'norsk' ? no : en;
 
-const Regnskap = () => (
-    <>
-        <h2>Dine Ambisjoner, Vår Ekspertise – Hvordan Kan Vi Støtte Deg?</h2>
+    return (
+        <>
+            <img src="/hjem-bildet.jpg" alt="" className="img-style" />
+            <div className="bildeTekst">
+                <h1>M&N</h1>
+                <h1>{textData.regnskap}</h1> 
+                <h4>{textData.home_page_text}</h4>
+                <a href="/om">
+                    <button className="bildeKnapp">{textData.more_info}</button>
+                </a>
+            </div>
+        </>
+    );
+}
+
+
+function Regnskap({ language }) {
+    const textData = language === 'norsk' ? no : en;
+
+    return (
+        <>
+            <h2>{textData.ambitions_expertise}</h2>
         <div className="regnskapsBoks">
             <div className="regnskapsKort">
                 <img src="/kalk.png" alt="" loading="lazy" />
-                <h3>Regnskap</h3>
-                <p>Løpende bokføring, Årsoppgjør, Skattemelding og Rapportering til Altinn.</p>
+                    <h3>{textData.accounting}</h3>
+                    <p>{textData.accounting_description}</p>
             </div>
             <div className="regnskapsKort">
                 <img src="/regn1.jpg" alt="" loading="lazy" />
@@ -67,6 +82,7 @@ const Regnskap = () => (
         </a>
     </>
 );
+}
 
 const Partnere = () => {
     // Bruk useEffect til å kjøre JavaScript-koden ved lasting av komponenten

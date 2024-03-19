@@ -3,5 +3,18 @@
   "about_us": "Om oss",
   "our_team": "V\u00E5rt team",
   "deadlines": "Frister",
-  "contact_us": "Kontakt oss"
+  
+  "contact_us": "Kontakt oss",
+  "regnskap": "REGNSKAP",
+  "home_page_text": "Vi tar vare på regnskapet ditt!",
+  "more_info": "Mer Info",
+  "ambitions_expertise": "Dine Ambisjoner, Vår Ekspertise - Hvordan Kan Vi Støtte Deg?",
+  "accounting": "Regnskap",
+  "accounting_description": "Løpende bokføring, Årsoppgjør, Skattemelding og Rapportering til Altinn.",
+  "advice": "Rådgivning",
+  "advice_description": "Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.",
+  "tax_return": "Skattemelding for personer",
+  "tax_return_description": "Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.",
+  "budgeting": "Budsjettlegging",
+  "budgeting_description": "Vi fakturerer på dine vegne, enten elektronisk eller per post."
 }

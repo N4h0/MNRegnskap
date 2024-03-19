@@ -1,38 +1,39 @@
 import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-
-// Importer JSON-filene
-import enData from '../languages/en.json';
-import noData from '../languages/no.json';
+import { LanguageContext } from '../languages/LanguageContext';
+import en from '../languages/en.json'; // Importer engelsk språkdata
+import no from '../languages/no.json'; // Importer norsk språkdata
 
 export default class NavBar extends Component {
-    static displayName = NavBar.name;
+    static contextType = LanguageContext; // Gjør LanguageContext tilgjengelig i denne komponenten
 
     constructor(props) {
         super(props);
         this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.toggleDropdown = this.toggleDropdown.bind(this); // Ny binding
         this.state = {
             collapsed: true,
-            language: 'en' // Setter standard språk til engelsk
+            dropdownOpen: false // Ny tilstandsvariabel
         };
     }
-    // Metode for å bytte visning av navigasjonsmenyen
+
+    toggleDropdown() {
+        this.setState(prevState => ({
+            dropdownOpen: !prevState.dropdownOpen
+        }));
+    }
+
     toggleNavbar() {
         this.setState({
             collapsed: !this.state.collapsed
         });
     }
-    //Metode for å bytte språk
-    changeLanguage = (language) => {
-        this.setState({ language });
-    }
 
     render() {
-        // Velg riktig språkdata basert på valgt språk
-        const languageData = this.state.language === 'en' ? enData : noData;
-
+        const { language } = this.context; // Hent ut language fra context
+        const labels = language === 'norsk' ? no : en; // Velg riktig språkobjekt
         return (
             <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow navbar" light>
                 <NavbarBrand tag={Link} to="/hjem" className="navbar-logo-container">
@@ -44,37 +45,36 @@ export default class NavBar extends Component {
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                 <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
                     <ul className="navbar-nav flex-grow">
-                        <NavLink tag={Link} className="text-dark nav-link" to="/hjem">
-                            <p className="nav-link-text">{languageData.home}</p>
-                        </NavLink>
                         <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/about">
-                                <p className="nav-link-text">{languageData.about_us}</p>
-                            </NavLink>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/hjem">{labels.home}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/team">
-                                <p className="nav-link-text">{languageData.our_team}</p>
-                            </NavLink>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/about">{labels.about_us}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/link">
-                                <p className="nav-link-text">{languageData.deadlines}</p>
-                            </NavLink>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/team">{labels.our_team}</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/link">{labels.deadlines}</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} className="text-dark nav-link" to="/contact">
-                                <p className="nav-link-text">{languageData.contact_us}</p>
+                                {labels.contact_us}
                             </NavLink>
                         </NavItem>
-
-                        {/* Språkvelger */}
                         <NavItem>
-                            <div className="language-selector">
-                                <button onClick={() => this.changeLanguage('en')}>English</button>
-                                <button onClick={() => this.changeLanguage('no')}>Norsk</button>
-                            </div>
+                            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+                                <DropdownToggle caret>
+                                    {language === 'norsk' ? 'Norsk' : 'English'}
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                    <DropdownItem onClick={() => this.context.setLanguage('norsk')}>Norsk</DropdownItem>
+                                    <DropdownItem onClick={() => this.context.setLanguage('english')}>English</DropdownItem>
+                                </DropdownMenu>
+                            </Dropdown>
                         </NavItem>
+
+                  
                     </ul>
                 </Collapse>
             </Navbar>
