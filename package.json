@@ -3,17 +3,11 @@
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-<<<<<<< HEAD
 <<<<<<< Updated upstream
     "jquery": "^3.7.1",
 =======
     "prop-types": "^15.8.1",
 >>>>>>> Stashed changes
-=======
-    "i18next": "^23.10.1",
-    "jquery": "^3.7.1",
-    "react-i18next": "^14.1.0",
->>>>>>> 69173ca6f7755010e1e6551bfa7e9be79e156379
     "react-router-dom": "^6.22.3",
     "reactstrap": "^9.2.2"
   }
