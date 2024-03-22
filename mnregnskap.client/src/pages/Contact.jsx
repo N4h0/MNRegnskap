@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import { LanguageContext } from '../languages/LanguageContext'; // Juster stien etter hvor din LanguageContext befinner seg
 import map from '../assets/map.png';
 import phone from '../assets/phone.png';
 import message from '../assets/message.png';
 import './Contact.css';
 
+// Importer dine språkdatafiler (eller håndter det som passer best for din app-struktur)
+import en from '../languages/en.json'; // Engelsk språkdata
+import no from '../languages/no.json'; // Norsk språkdata
+
+
 function Contact() {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
+
+
     return (
         <div className="contact-us-page">
             <section className="hero-content">
                 <div className="main-wrapper">
                     <div className="hero-body">
                         <div className="hero-text">
-                            <h1 className="hero-heading">Har du noe på hjertet?</h1>
-                            <p>Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.
+                            <h1 className="hero-heading">{textData.anything_on_heart}</h1>
+                            <p>{textData.what_our_team_does}
                             </p>
                         </div>
                     </div>
@@ -23,16 +33,16 @@ function Contact() {
                     <div className="supports">
                         <div className="support-card first">
                             <img src={phone} className="support-card-image" />
-                            <h4>Snakk med oss</h4>
-                            <span>Din tilbakemelding er viktig for oss. Vi er klare til å lytte og finne løsninger sammen.</span>
+                            <h4>{textData.talk_to_us}</h4>
+                            <span>{textData.your_feedback}.</span>
                             <a>+0047 40 05 68 98</a>
-                            <h4>Når en er i nød:</h4>
-                            <span>.. trenger man litt hjelp fra venner... eller MN Regnskap support. Ikke overtenk... vi er her for deg.</span>
+                            <h4>{textData.when_on_distress}</h4>
+                            <span>{textData.help_from_us}</span>
                         </div>
                         <div className="support-card second">
                             <img src={message} className="support-card-image" />
-                            <h4>Be om konsultasjon</h4>
-                            <span>Konsentrer deg om det du er god på – Vi tar oss av regnskapet!   Ta kontakt med oss for en uforpliktende samtale.</span>
+                            <h4>{textData.request_a_consultation}</h4>
+                            <span>{textData.concentrate}</span>
                             <div className="form-input">
                                 <input type="text" className="input-name" placeholder="Navn" />
                             </div>
@@ -42,7 +52,7 @@ function Contact() {
                             <div className="form-input">
                                 <textarea placeholder="Skriv først organisasjonsnummeret og følg deretter med meldingen" />
                             </div>
-                            <a className="btn-common" onlick="SendInn()">Send Inn</a>
+                            <a className="btn-common" onlick="SendInn()">{textData.send}</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +60,7 @@ function Contact() {
             <section className="connect">
                 <div className="main-wrapper">
                     <div className="connect-title">
-                        <h2 className="title">Skal vi ta det over en kopp kaffe? ☕️</h2>
+                        <h2 className="title">{textData.talk_coffe}</h2>
                     </div>
                     <div className="connect-main">
                         <div className="connect-body">
@@ -59,13 +69,13 @@ function Contact() {
                             </div>
                             <div className="connect-detail">
                                 <div className="detail-item">
-                                    <h3>Hovedkontor</h3>
+                                    <h3>{textData.head_office}</h3>
                                     <span>Vollaveien 20 A</span>
                                     <span>Oslo, 0668</span>
                                     <span>Norge</span>
                                 </div>
                                 <div className="detail-item">
-                                    <h5>Ring oss</h5>
+                                    <h5>{textData.call_us}</h5>
                                     <span>+0047 MNRegnskap</span>
                                     <span>(40 05 68 98)</span>
                                 </div>
@@ -73,7 +83,7 @@ function Contact() {
                                     <span className="">Addresse:</span>
                                     <span> mn@mnregnskap.no</span>
                                 </div>
-                                <h5>Organisasjons nummer:</h5>
+                                <h5>{textData.organization_number}</h5>
                                 <a>992 720 999</a>
                             </div>
                         </div>
