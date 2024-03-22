@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
-import { LanguageContext } from '../languages/LanguageContext'; // Juster stien etter hvor din LanguageContext befinner seg
+import { LanguageContext } from '../languages/LanguageContext'; 
 import map from '../assets/map.png';
 import phone from '../assets/phone.png';
 import message from '../assets/message.png';
 import './Contact.css';
 
-// Importer dine språkdatafiler (eller håndter det som passer best for din app-struktur)
+
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
 
