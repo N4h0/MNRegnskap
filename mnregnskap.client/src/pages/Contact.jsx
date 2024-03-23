@@ -1,10 +1,27 @@
 import React from 'react';
+import emailjs from '@emailjs/browser'; // Importer emailjs
 import map from '../assets/map.png';
 import phone from '../assets/phone.png';
 import message from '../assets/message.png';
 import './Contact.css';
 
 function Contact() {
+    // Funksjon for å sende e-post via emailjs
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm("desig4344.gmail.com", "template_6rs1lh8", e.target, { publicKey: "KyNlFb-WjIs15bWeo" })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
         <div className="contact-us-page">
             <section className="hero-content">
@@ -12,8 +29,7 @@ function Contact() {
                     <div className="hero-body">
                         <div className="hero-text">
                             <h1 className="hero-heading">Har du noe på hjertet?</h1>
-                            <p>Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.
-                            </p>
+                            <p>Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.</p>
                         </div>
                     </div>
                 </div>
@@ -32,17 +48,20 @@ function Contact() {
                         <div className="support-card second">
                             <img src={message} className="support-card-image" />
                             <h4>Be om konsultasjon</h4>
-                            <span>Konsentrer deg om det du er god på – Vi tar oss av regnskapet!   Ta kontakt med oss for en uforpliktende samtale.</span>
-                            <div className="form-input">
-                                <input type="text" className="input-name" placeholder="Navn" />
-                            </div>
-                            <div className="form-input">
-                                <input type="email" className="input-email" placeholder="Epost" />
-                            </div>
-                            <div className="form-input">
-                                <textarea placeholder="Skriv først organisasjonsnummeret og følg deretter med meldingen" />
-                            </div>
-                            <a className="btn-common" onlick="SendInn()">Send Inn</a>
+                            <span>Konsentrer deg om det du er god på – Vi tar oss av regnskapet! Ta kontakt med oss for en uforpliktende samtale.</span>
+                            {/* Form for å sende e-post */}
+                            <form onSubmit={sendEmail}>
+                                <div className="form-input">
+                                    <input type="text" className="input-name" placeholder="Navn" name="user_name" />
+                                </div>
+                                <div className="form-input">
+                                    <input type="email" className="input-email" placeholder="Epost" name="user_email" />
+                                </div>
+                                <div className="form-input">
+                                    <textarea placeholder="Skriv først organisasjonsnummeret og følg deretter med meldingen" name="user_message" />
+                                </div>
+                                <button className="btn-common" type="submit">Send Inn</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -55,7 +74,7 @@ function Contact() {
                     <div className="connect-main">
                         <div className="connect-body">
                             <div className="map-box">
-                                <img src={map} alt="Global Offices Map"></img>
+                                <img src={map} alt="Global Offices Map" />
                             </div>
                             <div className="connect-detail">
                                 <div className="detail-item">

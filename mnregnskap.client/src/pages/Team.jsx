@@ -26,13 +26,13 @@ function Team() {
             <div className='aboutIs_box'>
                 <div className='aboutUs_box_hero'>
                     <div className='aboutUs_box_hero_left'>
-                        <h1>About Us </h1>
+                        <h1>Historien vår </h1>
                         <p>
-                            M&N Accounting is a personal accounting firm that communicates
-                            well with its clients, knows their financial history and condition,
-                            and provides services that optimize the client’s financial situation.
-                            Our goal is to be an important contributor to our clients as an accountant and advisor.
-                            We have a broad network of contacts in the field of auditing and legal services.
+                        M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel 
+                        i ulike bransjer. Vi betjener kunder i Oslo og andre deler av Norge. Vårt team består av høyt 
+                        utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt i 2008 av Moosa Ali 
+                        Rashid og Naila Sohail Khokhar, begge med utdanning innen revisjon. Med årene har vi vokst i takt med 
+                        vårt klientnettverk.
                         </p>
                     </div>
                     <div className='aboutUs_box_hero_right'>
@@ -52,12 +52,12 @@ function Team() {
 
                     </div>
                         <div className='aboutUs_box_hero_right'>
-                            <h1>Historie.</h1>
+                            <h1>Oss</h1>
                             <p>
-                            M&N Accounting is located centrally on Frogner.
-                            We have extensive experience in accounting in most industries.
-                            We provide accounting services for customers in Oslo and the rest of Norway.
-                            We have employees with a high education and vast experience.
+                            M&N Regnskap har en høy faglig standard og gode rutiner for kvalitetssikring, da vi er oppmerksomme 
+                            på at regnskapsføring er forbundet med strenge krav og stramme tidsfrister. Vi tilbyr tjenester fra A 
+                            til Å og jobber i dag i stor grad digitalt, men vi tilpasser oss også klientenes ønsker om papirbaserte
+                             løsninger. La oss ta oss av regnskapet, slik at du kan fokusere på det du er best på!
                             </p>
                         </div>
                     </div>

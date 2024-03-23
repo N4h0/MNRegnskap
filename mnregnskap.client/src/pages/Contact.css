@@ -251,6 +251,8 @@ a {
 .form-input {
     width: 100%;
     margin-bottom: 8px;
+    width: 400px;
+    height: 60px;
 }
 
 .form-input input {
@@ -262,3 +264,4 @@ a {
     width: 100%;
     padding: 0.5625rem 0.625rem;
 }
+
