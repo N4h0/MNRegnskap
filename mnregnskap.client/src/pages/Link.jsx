@@ -15,7 +15,6 @@ function Link() {
             </div>
         </>
     );
-
 }
 
 
