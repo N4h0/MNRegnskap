@@ -296,12 +296,21 @@ h2 {
 
 
 
-@media (max-width: 768px) {
-}
+@media (max-width: 989px) {
+    .kontaktTekstboks p {
+     
+        font-size: 15px;
+     
+    }
+    .kontaktTekstboks h1{
+        font-size:20px;
+    }
 
 
 @media (max-width:768px) {
+   
 }
 
 @media (max-width:1024px) {
+
 }
