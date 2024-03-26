@@ -1,4 +1,3 @@
-import React from 'react'; // Legg til denne importen hvis du ikke allerede har React importert
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';

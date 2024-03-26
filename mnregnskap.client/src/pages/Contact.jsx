@@ -1,4 +1,3 @@
-import React from 'react';
 import emailjs from '@emailjs/browser'; // Importer emailjs
 import map from '../assets/map.png';
 import phone from '../assets/phone.png';
@@ -25,7 +24,7 @@ function Contact() {
     return (
         <div className="contact-us-page">
             <section className="hero-content">
-                <div className="main-wrapper">
+                <div className="main-wrapper"> 
                     <div className="hero-body">
                         <div className="hero-text">
                             <h1 className="hero-heading">Har du noe på hjertet?</h1>

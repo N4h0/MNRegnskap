@@ -1,4 +1,4 @@
-﻿import React, { useContext, useEffect } from 'react';
+﻿import { useContext, useEffect } from 'react';
 import { LanguageContext } from '../languages/LanguageContext'; 
 
 import './Hjem.css';
@@ -169,4 +169,4 @@ function Kontakt({ language }) {
     );
 }
 
-    export default Homepage;
+export default Homepage;

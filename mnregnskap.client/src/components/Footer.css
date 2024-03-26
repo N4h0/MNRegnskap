@@ -1,34 +1,38 @@
-.Footer {
+.footer {
     margin-top: auto; /*Feste footeren til botn av sida (sjekk: https://www.youtube.com/watch?v=pggIVY5eOGM) */
     margin-bottom: 0px;
-    font-family: 'Copperplate', Fantasy;
-    color: #FFFFFF; /* Example text color */
-    background-color: #494848;
-}
-.footer-adv {
-    padding-top: 30px;
-    padding-bottom: 0px;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF; 
+    background-color: #3a3a3a; /*Grå-ish bakgrunn*/
 }
 
-.ast-container {
+
+.footer h1 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+
+.top-kontainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:100px;
+    gap: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.widget-title{
-    margin:0 0 15px;
-    font-size:20px;
-}
+
 .address-meta {
     font-size: 15px;
+}
 
+
+.widget-address-field {
+    display: flex;
+    padding-bottom: 20px;
 }
-.widget-address-field{
-    display:flex;
-    padding-bottom:20px;
-}
+
 
 .address-icons path {
     fill: #ffffff; /* eller fill: white; */
@@ -41,15 +45,19 @@
     padding-right: 20px;
 }
 
-    #astra-widget-address-5 .widget-address .widget-address-field .address-meta {
+
+#astra-widget-address-5 .widget-address .kontaktinfo .address-meta {
     margin-left: 10px;
 }
+
 
 .ast-row.ast-flex {
     display: flex;
     font-size: 12px;
     justify-content: space-between;
 }
-.address{
-    margin-top:40px;
+
+
+.address {
+    margin-top: 50px;
 }
