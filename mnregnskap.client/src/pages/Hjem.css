@@ -234,7 +234,7 @@ h2 {
     display: flex;
     position: relative; /*Absolut posisjon inne i boksen*/
     overflow: hidden;
-    padding-bottom:50px;
+    
 }
 
 .kontaktBilde img {
