@@ -73,6 +73,7 @@
 
 .regnskapsBoks {
     display: flex;
+    flex-wrap: wrap; /* Gjør det mulig for elementene å bryte til neste linje */
     justify-content: center;
 }
 
@@ -116,7 +117,12 @@
     line-height: 1.15;
     padding: 20px 60px;
     margin-bottom: 20px;
+    margin-left:25px;
 }
+    .regnskapsKnapp:hover {
+        text-decoration: none;
+        color: white;
+    }
 
 .regnskapsKnappTekst {
     color: #FFF;
@@ -228,10 +234,7 @@ h2 {
     display: flex;
     position: relative; /*Absolut posisjon inne i boksen*/
     overflow: hidden;
-<<<<<<< HEAD
-    
-=======
->>>>>>> e3a40ba47bf5786267537d95657866725bcd66d5
+
 }
 
 .kontaktBilde img {
@@ -305,10 +308,33 @@ h2 {
     }
 
 
-@media (max-width:768px) {
-   
-}
+    @media (max-width:1026px) {
+        .kontaktOssBoks {
+            display: flex;
+            flex-direction: column;
+        }
+        .regnskapsBoks {
+            justify-content:center;
+        }
+        .bildeTekst {
+            top: 40%;
+            left: 50%;
+         
+        }
+        .bildeKnapp {
+            margin-top: 5px;
+        }
 
-@media (max-width:1024px) {
+@media (max-width:769px) {
 
+    .bildeKnapp {
+        margin-top: 5px;
+    }
+    .bildeTekst h2{
+        font-size:25px;
+    }
+    .bildeTekst {
+        top: 30%;
+        left: 50%;
+    }
 }

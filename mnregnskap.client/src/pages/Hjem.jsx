@@ -40,7 +40,7 @@ function Bildet({ language }) {
             <div className="bildeTekst">
                 <h1>M&N</h1>
                 <h1>{textData.regnskap}</h1>
-                <h4>{textData.home_page_text}</h4>
+                <h2>{textData.home_page_text}</h2>
                 <a href="/om">
                     <button className="bildeKnapp">{textData.more_info}</button>
                 </a>
