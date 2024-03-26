@@ -8,6 +8,7 @@ import Hjem from './pages/Hjem';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
+import Link from './pages/Link';
 
 // Importer LanguageProvider
 import { LanguageProvider } from './languages/LanguageContext';
@@ -30,6 +31,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/Hjem" element={<Hjem />} />
+                        <Route path="/Link" element={<Link />} />
                     </Routes>
                     <Chatbot />
                     <Footer />
