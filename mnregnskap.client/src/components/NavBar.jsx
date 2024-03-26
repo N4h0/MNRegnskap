@@ -31,9 +31,25 @@ export default class NavBar extends Component {
         });
     }
 
+    handleMouseEnter = () => {
+        this.setState({ dropdownOpen: true });
+    };
+
+    handleMouseLeave = () => {
+        this.setState({ dropdownOpen: false });
+    };
+
+
+    //FUNKY BUG:
+
+    //                                    <DropdownItem onClick={() => this.context.setLanguage('norsk')}>Norsk</DropdownItem>
+    //                               <DropdownItem onClick={() => this.context.setLanguage('english')}>English</DropdownItem>
+
+    //Den koden fungerer, men når eg oversetter blir dropdown-UIen feil på engelsk?!?!??!
+
     render() {
         const { language } = this.context; // Hent ut language fra context
-        const labels = language === 'norsk' ? no : en; // Velg riktig sprokobjekt
+        const labels = language === 'norsk' ? no : en; // Velg riktig språkobjekt
         return (
             <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow navbar" light>
                 <NavbarBrand tag={Link} to="/hjem" className="navbar-logo-container">
@@ -59,13 +75,13 @@ export default class NavBar extends Component {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
-                                <DropdownToggle caret>
+                            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+                                <DropdownToggle caret className="text-dark nav-link">
                                     {language === 'norsk' ? 'Norsk' : 'English'}
                                 </DropdownToggle>
                                 <DropdownMenu>
-                                    <DropdownItem onClick={() => this.context.setLanguage('norsk')}>Norsk</DropdownItem>
-                                    <DropdownItem onClick={() => this.context.setLanguage('english')}>English</DropdownItem>
+                                    <DropdownItem onClick={() => this.context.setLanguage('norsk')}>{labels.norwegian}</DropdownItem>
+                                    <DropdownItem onClick={() => this.context.setLanguage('english')}>{labels.english}</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </NavItem>
