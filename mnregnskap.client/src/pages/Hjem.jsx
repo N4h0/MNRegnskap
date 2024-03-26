@@ -161,8 +161,10 @@ function Kontakt({ language }) {
             <img src="./bok.jpg" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
             <div className="kontaktTekstboks">
                     <h1>{textData.join_us}</h1>
-                    <h2>{textData.focus_on}</h2>
-                    <p>{textData.contact_us}</p>
+                    <p>{textData.focus_on}</p>
+                    <a href="/contact">
+                        <button className="kontaktKnapp">{textData.contact_us}</button>
+                    </a>
             </div>
         </div>
     </>

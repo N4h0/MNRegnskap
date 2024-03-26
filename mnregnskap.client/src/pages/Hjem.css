@@ -259,13 +259,12 @@ h2 {
     text-transform: uppercase;
 }
 
-.kontaktTekstboks h2 { 
-    padding-top: 50px; /*Avstand til overskrift*/
+.kontaktTekstboks p { 
+    padding-top: 20px; /*Avstand til overskrift*/
     padding-bottom: 15px;
     color: black;
     font-size: 20px;
     height: auto;
-    font-family: "Cormorant", "Cormorant Placeholder", serif;
     font-size: 31px;
     line-height: 40.3px;
     color: rgb(125, 75, 39);
@@ -273,15 +272,16 @@ h2 {
     margin-left: auto;
     margin-right: auto; /* margin auto er n�dvendig for at innhaldet blir senterert etter width:XX% */
 }
+    .kontaktTekstboks a,p {
+        font-family: "Cormorant", "Cormorant Placeholder", serif;
+    }
 
-.kontaktTekstboks p { /*Kontakt oss-knapp*/
+.kontaktKnapp { /*Kontakt oss-knapp*/
     display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
     border: 2.67px double #7d4b27;
     border-radius: 2px;
     background-color: #fcf7e5bf;
     box-shadow: 0 0 0 1px #333;
-    overflow: visible;
-    font-family: "Cormorant", "Cormorant Placeholder", serif;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1.4px;
@@ -290,4 +290,25 @@ h2 {
     color: rgb(125, 75, 39);
     text-transform: uppercase;
     padding: 20px 20px;
+}
+
+
+
+@media (max-width: 989px) {
+    .kontaktTekstboks p {
+     
+        font-size: 15px;
+     
+    }
+    .kontaktTekstboks h1{
+        font-size:20px;
+    }
+
+
+@media (max-width:768px) {
+   
+}
+
+@media (max-width:1024px) {
+
 }
