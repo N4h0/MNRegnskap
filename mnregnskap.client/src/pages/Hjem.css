@@ -294,14 +294,14 @@ h2 {
 
 
 
-@media (max-width: 989px) {
+@media (max-width: 1250px) {
     .kontaktTekstboks p {
      
-        font-size: 15px;
+        font-size: 20px;
      
     }
     .kontaktTekstboks h1{
-        font-size:20px;
+        font-size:25px;
     }
 
 
