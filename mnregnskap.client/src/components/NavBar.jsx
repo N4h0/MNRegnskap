@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
@@ -41,7 +41,6 @@ export default class NavBar extends Component {
                         <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" className="mr-2 navbar-logo" />
                     </div>
                 </NavbarBrand>
-
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                 <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
                     <ul className="navbar-nav flex-grow">
@@ -49,10 +48,7 @@ export default class NavBar extends Component {
                             <NavLink tag={Link} className="text-dark nav-link" to="/hjem">{labels.home}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/about">{labels.about_us}</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink tag={Link} className="text-dark nav-link" to="/team">{labels.our_team}</NavLink>
+                            <NavLink tag={Link} className="text-dark nav-link" to="/team">{labels.about}</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} className="text-dark nav-link" to="/link">{labels.deadlines}</NavLink>
@@ -73,8 +69,6 @@ export default class NavBar extends Component {
                                 </DropdownMenu>
                             </Dropdown>
                         </NavItem>
-
-                  
                     </ul>
                 </Collapse>
             </Navbar>
