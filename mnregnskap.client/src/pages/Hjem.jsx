@@ -163,7 +163,7 @@ function Kontakt({ language }) {
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>
                     <a href="/contact">
-                        <button className="kontaktKnapp">{textData.more_info}</button>
+                        <button className="kontaktKnapp">{textData.contact_us}</button>
                     </a>
             </div>
         </div>
