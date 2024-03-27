@@ -37,7 +37,7 @@ function Bildet({ language }) {
     return (
         <>
             <img src="/hjem-bildet.jpg" alt="" className="img-style" />
-            <div className="bilst">
+            <div className="bildeTekst">
                 <h1>M&N</h1>
                 <h1>{textData.regnskap}</h1>
                 <h2>{textData.home_page_text}</h2>
