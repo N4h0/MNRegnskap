@@ -98,17 +98,17 @@ function Partnere({ language }) {
                 responsive: [{
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 4
+                        slidesToShow: 3
                     }
                 }, {
-                    breakpoint: 520,
+                    breakpoint: 529,
                     settings: {
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 }]
             });
         });
-    }, []); // Pass an empty array as second argument to run this effect only once after the component mounts
+    }, []); 
 
     // JSX-koden
     return (
