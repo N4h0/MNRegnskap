@@ -301,11 +301,14 @@ h2 {
 
 
 @media (max-width: 1250px) {
-.kontaktTekstboks p {
-    font-size: 20px;     
-}
-.kontaktTekstboks h1{
-    font-size:25px;
+    .kontaktTekstboks p {
+        font-size: 20px;
+    }
+
+    .kontaktTekstboks h1 {
+        font-size: 25px;
+    }
+    
 }
 
     @media (max-width:1026px) {
@@ -317,7 +320,7 @@ h2 {
             justify-content:center;
         }
         .bildeTekst {
-            top: 40%;
+            top: 30%;
             left: 50%;
         }
         .bildeKnapp {
@@ -325,17 +328,73 @@ h2 {
         }
     }
 
-@media (max-width:769px) {
+    @media (max-width:769px) {
 
         .bildeKnapp {
             margin-top: 5px;
         }
-        .bildeTekst h2{
-            font-size:25px;
+
+        .bildeTekst h2 {
+            font-size: 25px;
         }
+
         .bildeTekst {
             top: 30%;
             left: 50%;
         }
+
+        /**Bok*/
+
+
+        kontaktTekstboks p {
+            padding-top: 1px;
+            padding-bottom: 0px;
+        }
+
+        .kontaktTekstboks {
+            padding-top: 0px;
+        }
+
+        .kontaktKnapp {
+            font-size: 20px;
+        }
     }
+
+@media (max-width:717px) {
+    .bildeTekst h1 {
+        font-size: 50px;
+    }
+
+    .bildeTekst h2 {
+        font-size: 20px;
+    }
+    .bildeTekst {
+        top: 40%;
+        left: 50%;
+    }
+
+    kontaktTekstboks p {
+        padding-top: 1px;
+        padding-bottom: 10px;
+        font-size:10px;
+    }
+
+    .kontaktTekstboks {
+        top: 0%;
+        width: 55%;
+        padding-top: 25px;
+        padding-right: 25px;
+    }
+
+        .kontaktTekstboks h1 {
+            font-size: 15px;
+        }
+
+}
+
+
+@media (max-width:717px) {
+
+
+
 }
