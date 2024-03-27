@@ -106,7 +106,6 @@
 }
 
 .aboutUs_box_hero_right {
-    background-color: #b7daee;
     transition: background-color 0.3s ease;
     border-radius: 10px;
     margin-right: 10px;
@@ -114,7 +113,7 @@
 }
 
 .aboutUs_box_hero_left {
-    background-color: #b7daee;
+
     transition: background-color 0.4s ease;
     border-radius: 10px;
     margin-left: 10px;

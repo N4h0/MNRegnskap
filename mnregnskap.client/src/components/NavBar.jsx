@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // https://fon
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { LanguageContext } from '../languages/LanguageContext';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import en from '../languages/en.json'; // Engelsk språkdata
-import no from '../languages/no.json'; // Norsk språkdata
+import en from '../languages/en.json'; // Engelsk sprï¿½kdata
+import no from '../languages/no.json'; // Norsk sprï¿½kdata
 
 export default class NavBar extends Component {
     static contextType = LanguageContext; // Gjor LanguageContext tilgjengelig i denne komponenten
@@ -30,7 +30,7 @@ export default class NavBar extends Component {
                 <FontAwesomeIcon id="dropDownIkon" icon={faBars} onClick={this.toggleMenu} />
                 <Link to="/hjem" className="navTekst">{labels.home}</Link>
                 <Link to="/team" className="navTekst">{labels.about}</Link>
-                <Link to="/deadlines" className="navTekst">{labels.deadlines}</Link>
+                <Link to="/link" className="navTekst">{labels.deadlines}</Link>
                 <Link to="/contact" className="navTekst">{labels.contact_us}</Link>
                 <div className="dropDown">
                     <a className="navTekst">{labels.language}</a>

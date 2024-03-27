@@ -88,7 +88,7 @@ function Contact() {
                                     <span>(40 05 68 98)</span>
                                 </div>
                                 <div className="detail-item fax">
-                                    <span className="">Addresse:</span>
+                                    <span className="">Addresse: </span>
                                     <span> mn@mnregnskap.no</span>
                                 </div>
                                 <h5>Organisasjons nummer:</h5>

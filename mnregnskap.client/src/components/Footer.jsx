@@ -47,9 +47,7 @@ const ContactInfo = () => (
 
 const Copyright = () => (
     <div className="copyright">
-        <p>M&N regnskap.</p>
-        <p>Opphavsrett © {new Date().getFullYear()} M&N Regnskap.</p>
-        <p>All rights reserved.</p>
+        <p>M&N regnskap. Opphavsrett © {new Date().getFullYear()} M&N Regnskap. All rights reserved</p>
     </div>
 );
 
