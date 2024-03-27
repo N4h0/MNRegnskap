@@ -35,8 +35,8 @@ export default class NavBar extends Component {
                 <div className="dropDown">
                     <a className="navTekst">{labels.language}</a>
                     <div className="dropDownContent">
-                        <button onClick={() => this.context.setLanguage('norsk')} className="text-dark nav-link">{labels.english}</button>
-                        <button onClick={() => this.context.setLanguage('english')} className="text-dark nav-link">{labels.norwegian}</button>
+                        <button onClick={() => this.context.setLanguage('english')} className="text-dark nav-link">{labels.english}</button>
+                        <button onClick={() => this.context.setLanguage('norsk')} className="text-dark nav-link">{labels.norwegian}</button>
                     </div>
                 </div>
             </div>
