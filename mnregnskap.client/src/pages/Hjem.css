@@ -181,10 +181,10 @@
 
 
 
-h2 {
+.partnerBakgrunn h2 {
     text-align: center;
     padding: 20px;
-    font-size:30px;
+    font-size:35px;
 }
 
 .slick-slide {
@@ -406,5 +406,58 @@ h2 {
     }
     .bildeTekst h1 {
         font-size: 35px;
+    }
+}
+
+@media (max-width: 281px) {
+
+
+    /*Bilde seksjonen*/
+
+    .bildeTekst h1 {
+        font-size: 25px;
+    }
+
+    .bildeTekst h2 {
+        padding: 1px;
+    }
+    .bildeKnapp {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+
+        .bildeTekst h2 {
+        font-size: 15px;
+    }
+
+
+        /*Kort seksjoen*/
+
+    .regnskapsKnapp {
+      
+        font-size: 15px;
+       
+        padding: 20px 30px;
+    }
+        /**Partner seksjonen*/
+
+        .partnereBakgrunn {
+        padding: 40px;
+    }
+
+        /**BOk seksjonen*/
+
+        .kontaktTekstboks h1 {
+        font-size: 15px;
+    }
+    .kontaktTekstboks p {
+       
+        font-size: 15px;
+    }
+        .kontaktKnapp {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+        line-height: 3px;
     }
 }

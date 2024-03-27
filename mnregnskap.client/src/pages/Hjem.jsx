@@ -95,25 +95,35 @@ function Partnere({ language }) {
                 arrows: false,
                 dots: false,
                 pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 529,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 281, 
+                        settings: {
+                            slidesToShow: 1 // Viser kun 1 logo for skjermer ≤ 281px
+                        }
                     }
-                }, {
-                    breakpoint: 529,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                }]
+                ]
             });
         });
-    }, []); 
+    }, []);
+
 
     // JSX-koden
     return (
         <div className="partnereBakgrunn">
-            <h2 className="text-center font-weight-bold">{textData.our_partner }</h2>
+            <h2 className="partner-tittel">{textData.our_partner }</h2>
             <section className="customer-logos slider">
                 <div className="slide"><img src="./adidas.png" alt="logo" /></div>
                 <div className="slide"><img src="./facebook.png" alt="logo" /></div>
