@@ -99,13 +99,13 @@ function Partnere({ language }) {
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 4
                         }
                     },
                     {
                         breakpoint: 529,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 3
                         }
                     },
                     {

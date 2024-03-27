@@ -171,7 +171,7 @@
 /*V�re partnere*/
 
 .partnereBakgrunn {
-    padding: 120px;
+    padding: 40px;
     
 }
 .partnereSeksjon{
@@ -439,11 +439,7 @@
        
         padding: 20px 30px;
     }
-        /**Partner seksjonen*/
-
-        .partnereBakgrunn {
-        padding: 40px;
-    }
+    
 
         /**BOk seksjonen*/
 
@@ -456,8 +452,6 @@
     }
         .kontaktKnapp {
         font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 1.4px;
-        line-height: 3px;
+      
     }
 }
