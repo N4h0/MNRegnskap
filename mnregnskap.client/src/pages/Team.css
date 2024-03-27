@@ -99,14 +99,14 @@
 }
 
 .aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
-    background-color: rgb(149, 149, 149);
+    background-color: #6bbbe9;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
 }
 
 .aboutUs_box_hero_right {
-    background-color: #dfdfdf;
+    background-color: #b7daee;
     transition: background-color 0.3s ease;
     border-radius: 10px;
     margin-right: 10px;
@@ -114,7 +114,7 @@
 }
 
 .aboutUs_box_hero_left {
-    background-color: #dfdfdf;
+    background-color: #b7daee;
     transition: background-color 0.4s ease;
     border-radius: 10px;
     margin-left: 10px;
