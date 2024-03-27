@@ -48,4 +48,21 @@
     border-top: 1px;
     border-top-style: solid;
     border-top-color: #7a7a7a;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:560px) {
+    .top-kontainer {
+        flex-direction:column;
+    }
+    .kontaktinfo {
+        width: 50%; /* or any specific width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .copyright {
+        flex-direction: column;
+    }
 }

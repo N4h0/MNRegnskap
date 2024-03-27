@@ -1,10 +1,12 @@
-{ 
+{
   "home": "Hjem",
   "about": "Om oss",
   "deadlines": "Frister",
   "contact_us": "Kontakt oss",
   "english": "Engelsk",
-  "Norsk":  "Norsk",
+  "norwegian": "Norsk",
+  "language": "Språk",
+
 
   "regnskap": "REGNSKAP",
   "home_page_text": "Vi tar vare på regnskapet ditt!",
