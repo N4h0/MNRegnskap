@@ -30,7 +30,7 @@
 
 
 .bildeSeksjon h1 {
-    font-family: "Volkhov", serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 60px;
     line-height: 55px;
     text-align: center;
@@ -261,39 +261,41 @@
 
 
 .kontaktTekstboks h1 { /*Hovudtittel*/
-    font-family: "Trocchi", "Trocchi Placeholder", serif;
-    font-size: 22px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 23px;
     letter-spacing: 2px;
     line-height: 20px;
     color: rgb(43, 43, 43);
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .kontaktTekstboks p { 
     padding-top: 20px; /*Avstand til overskrift*/
     padding-bottom: 15px;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 40.3px;
-    color: rgb(125, 75, 39);
+    color: rgb(1, 1, 1);
+    font-family: 'Varela Round', sans-serif;
 
 }
     .kontaktTekstboks a,p {
-        font-family: "Cormorant", "Cormorant Placeholder", serif;
+        font-family: 'Varela Round', sans-serif;
     }
 
 .kontaktKnapp { /*Kontakt oss-knapp*/
     display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
-    border: 2.67px double #7d4b27;
+    border: 2.67px double #77b1e7;
     border-radius: 2px;
-    background-color: #fcf7e5bf;
-    box-shadow: 0 0 0 1px #333;
+    background-color: #007bff;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 1000;
     letter-spacing: 1.4px;
     line-height: 32px;
     text-align: center;
-    color: rgb(125, 75, 39);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 20px 20px;
 }
