@@ -83,6 +83,10 @@ p {
     text-align: start;
 }
 
+.hero-text p {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .contact {
     display: flex;
     align-items: center;
@@ -146,7 +150,7 @@ a {
 .btn-common {
     text-decoration: none;
     color: white;
-    background-color: #ff5c35;
+    background-color: #5da6eb;
     border-radius: 3px;
     padding: 0.9em 1.388em;
     font-size: .9375rem;
@@ -267,5 +271,19 @@ a {
 .form-input textarea {
     width: 100%;
     padding: 0.5625rem 0.625rem;
+}
+
+.hero-heading {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.supports h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+}
+
+.support-card:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
