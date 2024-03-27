@@ -69,7 +69,6 @@ function Chatbot() {
             {!isOpen && (
                 <button className="chatButton" onClick={toggleChat}>
                     <FontAwesomeIcon icon={faCommentDots} />
-
                 </button>
             )}
             {isOpen && (

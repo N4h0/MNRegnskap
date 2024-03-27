@@ -1,6 +1,8 @@
 //Inspirasjon fra https://www.w3schools.com/css/css_navbar.asp og https://www.w3schools.com/css/css_dropdowns.asp
 import { Component } from 'react';
 import './NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // https://fontawesome.com/icons/bars?f=classic&s=solid
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { LanguageContext } from '../languages/LanguageContext';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import en from '../languages/en.json'; // Engelsk språkdata
@@ -8,12 +10,24 @@ import no from '../languages/no.json'; // Norsk språkdata
 
 export default class NavBar extends Component {
     static contextType = LanguageContext; // Gjor LanguageContext tilgjengelig i denne komponenten
+    state = {
+        isMenuOpen: false, // Initial state of the menu
+    };
 
+    toggleMenu = () => {
+        this.setState((prevState) => ({
+            isMenuOpen: !prevState.isMenuOpen,
+        }));
+    };
     render() {
         const { language } = this.context; // Hent ut language fra context
         const labels = language === 'norsk' ? no : en; // Velg riktig sprokobjekt
         return (
             <div className="topnav">
+                <Link to="/hjem">
+                    <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" />
+                </Link>
+                <FontAwesomeIcon id="dropDownIkon" icon={faBars} onClick={this.toggleMenu} />
                 <Link to="/hjem" className="navTekst">{labels.home}</Link>
                 <Link to="/team" className="navTekst">{labels.about}</Link>
                 <Link to="/deadlines" className="navTekst">{labels.deadlines}</Link>
