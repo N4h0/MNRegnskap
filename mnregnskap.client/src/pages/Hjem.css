@@ -13,18 +13,21 @@
 }
 
 .bildeSeksjon {
-    border-radius: inherit;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex; /* Aktiver flexbox */
+    justify-content: center; /* Sentrer barn horisontalt */
+    align-items: center; /* Sentrer barn vertikalt */
+    position: relative; /* Beholder posisjonering */
     width: 100%;
+    height: 100%; /* Definer en høyde, kan justeres etter behov */
 }
 
-.bildeSeksjon img {
-    position: relative;
-    width: 100%;
-}
+    .bildeSeksjon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Sørg for at bildet dekker containeren */
+        border-radius: inherit; /* Arv border-radius hvis nødvendig */
+    }
+
 
 .bildeSeksjon h1 {
     font-family: "Volkhov", serif;
@@ -34,13 +37,13 @@
 }
 
 .bildeTekst {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
     transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
     text-align: center;
-    margin-top: 30px
 }
+
 
 .bildeTekst h1, h4 {
     margin: 0;
@@ -319,10 +322,8 @@ h2 {
         .regnskapsBoks {
             justify-content:center;
         }
-        .bildeTekst {
-            top: 30%;
-            left: 50%;
-        }
+      
+
         .bildeKnapp {
             margin-top: 5px;
             
@@ -348,10 +349,8 @@ h2 {
             font-size: 25px;
         }
 
-        .bildeTekst {
-            top: 30%;
-            left: 50%;
-        }
+      
+
 
         /**Bok*/
 
@@ -378,10 +377,7 @@ h2 {
     .bildeTekst h2 {
         font-size: 20px;
     }
-    .bildeTekst {
-        top: 40%;
-        left: 50%;
-    }
+ 
 
     kontaktTekstboks p {
         padding-top: 1px;
