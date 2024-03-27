@@ -6,7 +6,7 @@ function Team() {
     const Bildet = () => (
 
         <div className="bilde-seksjon-img">
-            <img src="/index-bildet.jpg" alt="" className="img-style" />
+            <img src="/teambilde.avif" alt="" className="img-style" />
             <div className="tekst-i-midten">
                 {/*<h1>M&N</h1>
                 <h1>REGNSKAP</h1>
@@ -19,7 +19,8 @@ function Team() {
 
     );
 
-    let message = "Trenger inspirasjon til hva jeg skal skrive her"
+        let message = "Bak tallene står vi, din pålitelige partner for økonomisk suksess!"
+
     return (
         <>
             <div className='aboutIs_box'>
@@ -28,7 +29,10 @@ function Team() {
                         <h1>Historien vår </h1>
                         <p>
                         M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel 
-                        i ulike bransjer. Vi betjener kunder i Oslo og andre deler av Norge. Vårt team består av høyt 
+                        i ulike bransjer. Vi betjener kunder i Oslo og andre deler av Norge.
+                        </p>
+                        <p>
+                        Vårt team består av høyt 
                         utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt i 2008 av Moosa Ali 
                         Rashid og Naila Sohail Khokhar, begge med utdanning innen revisjon. Med årene har vi vokst i takt med 
                         vårt klientnettverk.
@@ -58,6 +62,11 @@ function Team() {
                             til Å og jobber i dag i stor grad digitalt, men vi tilpasser oss også klientenes ønsker om papirbaserte
                              løsninger. La oss ta oss av regnskapet, slik at du kan fokusere på det du er best på!
                             </p>
+                            <div className='bold-text'>
+                                <p>
+                                Konsentrer deg om det du er god på – Vi tar oss av regnskapet!
+                                </p>
+                            </div>
                         </div>
                     </div>
 

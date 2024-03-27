@@ -47,6 +47,7 @@
     .team-info p {
         color: #acacac;
         font-style: italic;
+        font-family: 'Varela Round', sans-serif;
     }
 
         .team-info::after {
@@ -70,7 +71,7 @@
             background-color: #dedede;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
-            border-radius: 50%;
+            border-radius: 10px;
         }
 
 
@@ -97,14 +98,43 @@
     gap: 3rem;
 }
 
-.aboutUs_box_hero_left h1 {
-    font-size: 3rem;
-    line-height: .5;
+.aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
+    background-color: rgb(149, 149, 149);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(6px);
 }
 
-.aboutUs_box_hero_left p {
-    font-size: 1.5rem;
+.aboutUs_box_hero_right {
+    background-color: #dfdfdf;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.aboutUs_box_hero_left {
+    background-color: #dfdfdf;
+    transition: background-color 0.4s ease;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.aboutUs_box_hero_left h1, .aboutUs_box_hero_right h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    line-height: .5;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
+    margin-top: 30px;
+    font-size: 1rem;
     line-height: 1.5;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .aboutUs_box_title {
@@ -114,15 +144,21 @@
     .aboutUs_box_title h2 {
         font-size: 3rem;
         line-height: 1;
+        font-family: 'Varela Round', sans-serif;
     }
 
     .aboutUs_box_title p {
         font-size: 1.5rem;
         line-height: 1.2;
         width: 40%;
+        font-family: 'Varela Round', sans-serif;
     }
 
+.bilde-seksjon-img {
+    border-radius: 10px;
+}
 
-
-
+.bold-text {
+    font-weight: 1200;
+}
 

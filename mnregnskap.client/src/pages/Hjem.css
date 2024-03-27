@@ -1,3 +1,7 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .img-style {
     display: block;
     width: 100%;
@@ -316,22 +320,23 @@ h2 {
         .bildeTekst {
             top: 40%;
             left: 50%;
-         
         }
         .bildeKnapp {
             margin-top: 5px;
         }
+    }
 
 @media (max-width:769px) {
 
-    .bildeKnapp {
-        margin-top: 5px;
-    }
-    .bildeTekst h2{
-        font-size:25px;
-    }
-    .bildeTekst {
-        top: 30%;
-        left: 50%;
+        .bildeKnapp {
+            margin-top: 5px;
+        }
+        .bildeTekst h2{
+            font-size:25px;
+        }
+        .bildeTekst {
+            top: 30%;
+            left: 50%;
+        }
     }
 }
