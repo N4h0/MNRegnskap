@@ -360,6 +360,8 @@ h2 {
 
 
 @media (max-width: 529px) {
+
+    /*Om oss seksjonen */
     .kontaktOssKort {
         flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
     }
@@ -375,4 +377,34 @@ h2 {
             font-size: 1rem; /* Justerer skriftstørrelsen ned */
         }
 
+
+
+        /*Bok seksjonen*/
+
+    .kontaktKnapp{
+        font-size:20px;
+    }
+    .kontaktTekstboks {
+        transform: translateY(-55%);
+        padding-left: 10px;
+        width: 70%;
+    }
+
+        .kontaktTekstboks h1 {
+            font-size: 20px;
+        }
+
+    .kontaktKnapp {
+    
+        font-size: 15px;
+    }
+    }
+
+@media (max-width: 370px) {
+    .bildeTekst h2 {
+        padding: 10px
+    }
+    .bildeTekst h1 {
+        font-size: 35px;
+    }
 }
