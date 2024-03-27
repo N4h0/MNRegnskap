@@ -3,13 +3,11 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-
-
-.subtopnav {
+.topnav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 30px;
+    padding: 30px 30px;
 }
 
 .navTekst {
@@ -22,7 +20,7 @@
     font-weight: 400;
 }
 
-.subtopnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -37,7 +35,6 @@
     z-index: 1; /* Dropdown på toppen */
     right: 0;
     background-color: #fff;
-    padding: 5px;
 }
 
 .dropDown:hover .dropDownContent {

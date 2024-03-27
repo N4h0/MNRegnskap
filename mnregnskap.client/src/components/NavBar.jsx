@@ -14,10 +14,6 @@ export default class NavBar extends Component {
         const labels = language === 'norsk' ? no : en; // Velg riktig sprokobjekt
         return (
             <div className="topnav">
-                <div className="navbar-logo-wrapper">
-                    <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" className="mr-2 navbar-logo" />
-                </div>
-                <div className= "subtopnav"></div>
                 <Link to="/hjem" className="navTekst">{labels.home}</Link>
                 <Link to="/team" className="navTekst">{labels.about}</Link>
                 <Link to="/deadlines" className="navTekst">{labels.deadlines}</Link>
