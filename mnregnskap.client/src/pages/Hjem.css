@@ -325,6 +325,16 @@ h2 {
         }
         .bildeKnapp {
             margin-top: 5px;
+            
+        }
+
+        /*Bok*/
+        .kontaktTekstboks p{
+            padding-bottom:2px;
+            padding-top:1px;
+        }
+        .kontaktTekstboks {
+            padding-top: 0px;
         }
     }
 
@@ -393,7 +403,7 @@ h2 {
 }
 
 
-@media (max-width:717px) {
+@media (max-width:541px) {
 
 
 
