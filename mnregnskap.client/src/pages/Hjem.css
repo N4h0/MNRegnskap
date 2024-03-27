@@ -18,7 +18,7 @@
     align-items: center; /* Sentrer barn vertikalt */
     position: relative; /* Beholder posisjonering */
     width: 100%;
-    height: 100%; /* Definer en høyde, kan justeres etter behov */
+    height: 100%; 
 }
 
     .bildeSeksjon img {
@@ -231,34 +231,34 @@ h2 {
     display: block;
 }
 
-.copy {
-    padding-top: 250px;
-}
 
 /*Kontakt oss*/
 
 .kontaktBilde {
-    display: flex;
-    position: relative; /*Absolut posisjon inne i boksen*/
-    overflow: hidden;
-
+    display: flex; /* Aktiver flexbox */
+    justify-content: center; /* Dette vil nå bli ignorert for absolutt posisjonerte barn */
+    align-items: center; /* Dette vil også bli ignorert for absolutt posisjonerte barn */
+    position: relative; /* Beholder posisjonering */
+    height: 60vh; /* Juster høyden etter behov */
 }
 
-.kontaktBilde img {
-    width: 100vw; /* Bredde tilsvarer 100% av vindusbredden */
-    height: auto; /* Beholder bildets sideforhold */
-    max-height: 60vh; /* Begrenser maksimal h�yde til 60% av vindush�yden */
-    display: block; /* Fjerner eventuelle ekstra mellomrom under bildet */
-    margin: 0; /* Fjerner marginer for � sikre at bildet tar hele bredden */
-}
+    .kontaktBilde img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Sørg for at bildet dekker containeren */
+        border-radius: inherit; /* Arv border-radius hvis nødvendig */
+    }
 
 .kontaktTekstboks {
-    position: absolute; /* Posisijonen til tekstboksen er absolutt (ikkje fleks, men fortsatt inne i ein fleksboks) */
-    left: 0; /* Fanger til venstre */
-    top: 10%;
-    width: 50%; /* bruker berre 50% av breidda */
-    padding-top: 30px; /* Padding rundt teksten */
+    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
+    transform: translateY(-50%);
+    left: 0%;
+    top: 50%;
+    text-align: center;
+    padding: 0 20px;
+    width: 50%;
 }
+
 
 .kontaktTekstboks h1 { /*Hovudtittel*/
     font-family: "Trocchi", "Trocchi Placeholder", serif;
@@ -274,12 +274,9 @@ h2 {
     padding-bottom: 15px;
     color: black;
     font-size: 20px;
-    height: auto;
     line-height: 40.3px;
     color: rgb(125, 75, 39);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; /* margin auto er n�dvendig for at innhaldet blir senterert etter width:XX% */
+
 }
     .kontaktTekstboks a,p {
         font-family: "Cormorant", "Cormorant Placeholder", serif;
@@ -303,16 +300,6 @@ h2 {
 
 
 
-@media (max-width: 1250px) {
-    .kontaktTekstboks p {
-        font-size: 20px;
-    }
-
-    .kontaktTekstboks h1 {
-        font-size: 25px;
-    }
-    
-}
 
     @media (max-width:1026px) {
         .kontaktOssBoks {
@@ -355,18 +342,7 @@ h2 {
         /**Bok*/
 
 
-        kontaktTekstboks p {
-            padding-top: 1px;
-            padding-bottom: 0px;
-        }
-
-        .kontaktTekstboks {
-            padding-top: 0px;
-        }
-
-        .kontaktKnapp {
-            font-size: 20px;
-        }
+    
     }
 
 @media (max-width:717px) {
@@ -379,28 +355,24 @@ h2 {
     }
  
 
-    kontaktTekstboks p {
-        padding-top: 1px;
-        padding-bottom: 10px;
-        font-size:10px;
-    }
-
-    .kontaktTekstboks {
-        top: 0%;
-        width: 55%;
-        padding-top: 25px;
-        padding-right: 25px;
-    }
-
-        .kontaktTekstboks h1 {
-            font-size: 15px;
-        }
-
+  
 }
 
 
-@media (max-width:541px) {
+@media (max-width: 529px) {
+    .kontaktOssKort {
+        flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
+    }
 
+        .kontaktOssKort img {
+            max-width: 150px; /* Reduserer maksbredde på bildet */
+        }
 
+        .kontaktOssKort h1{
+            font-size: 2rem; /* Justerer skriftstørrelsen ned */
+        }
+        .kontaktOssKort p {
+            font-size: 1rem; /* Justerer skriftstørrelsen ned */
+        }
 
 }
