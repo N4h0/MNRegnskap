@@ -3,15 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faTimes, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css';
 
-/* <i class="fa-solid fa-comment-lines"></i> denn kan vi ikke bruke, koster penger */
-
 function Chatbot() {
-
     const chatBodyRef = React.useRef(null);
-    const [isOpen, setIsOpen] = useState(false); //Konstant for å åpne/lukke chat
-    const [message, setMessage] = useState(''); //Konstant som lagrer sendt melding
+    const [isOpen, setIsOpen] = useState(false);
+    const [message, setMessage] = useState('');
     const [combinedMessages, setCombinedMessages] = useState([]);
-
 
     const toggleChat = () => {
         setIsOpen(!isOpen);
@@ -21,10 +17,11 @@ function Chatbot() {
         setMessage(e.target.value);
     };
 
-    //Logikk for å sende spørsmålet til botten v API
     const sendMessage = () => {
         if (message.trim() !== '') {
-            const newUserMessage = { type: 'user', content: message };
+            const currentDate = new Date();
+            const formattedTime = currentDate.toLocaleTimeString('nb-NO', {hour: '2-digit', minute: '2-digit'});
+            const newUserMessage = { type: 'user', content: message, time: formattedTime };
             setCombinedMessages(prev => [...prev, newUserMessage]);
 
             setMessage('');
@@ -38,28 +35,26 @@ function Chatbot() {
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Success:', data);
-                    const newBotResponse = { type: 'bot', content: data };
+                    const newBotResponse = { type: 'bot', content: data, time: formattedTime };
                     setCombinedMessages(prev => [...prev, newBotResponse]);
                 })
                 .catch((error) => {
                     console.error('Feil med returnering av melding fra robot:', error);
-                    setCombinedMessages(prev => [...prev, { type: 'bot', content: "Det skjedde en feil, kjører serveren?" }]);
+                    const errorMessage = { type: 'bot', content: "Det skjedde en feil, kjører serveren?", time: formattedTime };
+                    setCombinedMessages(prev => [...prev, errorMessage]);
                 });
         }
     };
 
-    //Kvar gong combinedMessages er oppdatert scrollar me til botn av sida. 
     useEffect(() => {
-        if (chatBodyRef.current) { //Hvis me finn elementet i chatten....
-            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight; //Scroller til botn av chatten.
+        if (chatBodyRef.current) {
+            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
         }
     }, [combinedMessages]);
 
-    //For å kunne bruke enter for å sende meldingar til robotten.
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
-            event.preventDefault(); //Passer på at enter ikkje gjer noko anne enn å sende melding
+            event.preventDefault();
             sendMessage();
         }
     };
@@ -82,7 +77,8 @@ function Chatbot() {
                     <div className="chatBody" ref={chatBodyRef}>
                         {combinedMessages.map((msg, index) => (
                             <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
-                                {msg.content}
+                                <div className="messageContent">{msg.content}</div>
+                                <div className="messageTime">{msg.time}</div>
                             </div>
                         ))}
                     </div>
@@ -91,7 +87,7 @@ function Chatbot() {
                             className="messageInput"
                             placeholder="Skriv inn meldingen din ..."
                             value={message}
-                            onChange={handleInputChange} //Oppdaterer message kvar gong det er gjort ein input.
+                            onChange={handleInputChange}
                             onKeyDown={handleKeyPress} />
                         <button className="SendMessage" onClick={sendMessage}>
                             <FontAwesomeIcon icon={faPaperPlane} />
@@ -101,8 +97,6 @@ function Chatbot() {
             )}
         </div>
     );
-};
-
-
+}
 
 export default Chatbot;
