@@ -7,6 +7,7 @@
     background: #fff;
     z-index: 999;
     border-radius: 70%;
+
 }
 
 .chatButton {
@@ -36,7 +37,7 @@
 .chatHeader {
     background-color: #000; /* Endret til svart */
     color: #fff; /* Endret tekstfarge til hvit */
-    padding: 10px;
+    padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +60,6 @@
     padding: 15px;
     height: 300px;
     overflow-y: auto;
-    max-width: 80%; /* Legg til denne linjen for å begrense bredden */
     margin: 0 auto; /* Sentrer containeren */
     display: flex;
     flex-direction: column;
@@ -70,23 +70,32 @@
 }
 
 .chatMessage {
-    background-color: #007bff;
-   align-self:flex-end;
- 
+    background-color: #000; /* Endret til svart */
+    color: #fff; /* Endret tekstfarge til hvit */
+
+    align-self: flex-end;
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
 }
 
 .botMessage {
     background-color: #e9ecef;
     align-self: flex-start;
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
 }
 .botMessage, .chatMessage {
     margin-bottom: 10px;
     word-wrap: break-word;
     white-space: pre-wrap;
     padding: 9px 10px;
-    border-radius: 10px 10px 0 10px;
+
     max-width: 65%;
     font-size: 0.5rem;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
 }
 
 /*Chat-footer*/
@@ -110,11 +119,13 @@
 
 .messageInput {
     width: 100%;
-    padding-right: 40px;
-    border: none;
-    border-bottom: 1px solid #ccc; /* Legg til en understrek */
-    outline: none;
+    height: 45px;
+    width: calc(100% - 58px);
     font-size: 16px;
+    padding: 0 13px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    border-radius: 5px 0 0 5px;
 }
 
 .SendMessage {
