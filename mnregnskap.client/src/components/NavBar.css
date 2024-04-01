@@ -3,9 +3,9 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-.topnav {
+.topnav, #navItems {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,12 +18,13 @@
     font-size: 17px;
     font-weight: 400;
 }
-.topnav > :first-child {
-    margin-right: auto; /* Pusher navbaren til h�gre :) */
+
+#navItems {
+    margin-left: auto;
 }
 
 .topnav a:hover {
-        text-decoration: none; /*Fjerne strek under linkane*/
+    text-decoration: none; /*Fjerne strek under linkane*/
 }
 
 .dropDownContent {
@@ -44,18 +45,27 @@
 
 #dropDownIkon {
     display: none;
-    font-size: 24px; /* Adjust the size here */
-    margin: 10px; /* Adjust the margins as needed */
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
 }
 
 @media (max-width: 550px) {
-    .navTekst{
+    #navItems {
         display: none
     }
     #dropDownIkon {
         display: block;
-        margin-left: auto;
     }
-
-    
+    #dropDownIkon:hover + #navItems {
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        z-index: 1; /* Dropdown p� toppen */
+        right: 0;
+        background-color: #fff;
+    }
 }
