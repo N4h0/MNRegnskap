@@ -33,7 +33,7 @@ function Bildet({ language }) {
 
     return (
         <>
-            <img src="/hjem-bildet.jpg" alt="" className="img-style" />
+            <img src="/kontor.jpeg" alt="" className="img-style" />
             <div className="bildeTekst">
                 <h1>M&N</h1>
                 <h1>{textData.regnskap}</h1>
@@ -75,9 +75,11 @@ function Regnskap({ language }) {
                     <p>{textData.budgeting_description}</p>
                 </div>
             </div>
-            <a className="regnskapsKnapp" href="/om">
-                <span className="regnskapsKnappTekst">{textData.more_info}</span>
-            </a>
+            <div className='siste-container'>
+                    <a className="regnskapsKnapp" href="/team">
+                        <span className="regnskapsKnappTekst">{textData.more_info}</span>
+                    </a>
+            </div> 
         </>
     );
 }
@@ -164,7 +166,7 @@ function Kontakt({ language }) {
     return (
     <>
         <div className="kontaktBilde">
-            <img src="./bok.jpg" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
+            <img src="./bok-2.jpg" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
             <div className="kontaktTekstboks">
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>
