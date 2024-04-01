@@ -28,15 +28,17 @@ export default class NavBar extends Component {
                     <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" />
                 </Link>
                 <FontAwesomeIcon id="dropDownIkon" icon={faBars} onClick={this.toggleMenu} />
-                <Link to="/hjem" className="navTekst">{labels.home}</Link>
-                <Link to="/team" className="navTekst">{labels.about}</Link>
-                <Link to="/link" className="navTekst">{labels.deadlines}</Link>
-                <Link to="/contact" className="navTekst">{labels.contact_us}</Link>
-                <div className="dropDown">
-                    <a className="navTekst">{labels.language}</a>
-                    <div className="dropDownContent">
-                        <button onClick={() => this.context.setLanguage('english')} className="text-dark nav-link">{labels.english}</button>
-                        <button onClick={() => this.context.setLanguage('norsk')} className="text-dark nav-link">{labels.norwegian}</button>
+                <div id = "navItems">
+                    <Link to="/hjem" className="navTekst">{labels.home}</Link>
+                    <Link to="/team" className="navTekst">{labels.about}</Link>
+                    <Link to="/link" className="navTekst">{labels.deadlines}</Link>
+                    <Link to="/contact" className="navTekst">{labels.contact_us}</Link>
+                    <div className="dropDown">
+                        <a className="navTekst">{labels.language}</a>
+                        <div className="dropDownContent">
+                            <button onClick={() => this.context.setLanguage('english')} className="text-dark nav-link">{labels.english}</button>
+                            <button onClick={() => this.context.setLanguage('norsk')} className="text-dark nav-link">{labels.norwegian}</button>
+                        </div>
                     </div>
                 </div>
             </div>
