@@ -2,8 +2,6 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-
-
 /*STORE BILDET*/
 .img-style {
     display: block;
@@ -63,7 +61,7 @@
 }
 
 .bildeKnapp:hover {
-    background-color: white; /* Endre bakgrunnsfargen ved hover til svart */
+    background-color: #e3f1f8; /* Endre bakgrunnsfargen ved hover til svart */
 }
 
 .bildeTekst h4 {
@@ -82,6 +80,7 @@
 }
 
 .regnskapsBoks {
+    background-color: #e3f1f8;
     display: flex;
     flex-wrap: wrap; /* Gjør det mulig for elementene å bryte til neste linje */
     justify-content: center;
@@ -125,17 +124,25 @@
     border-radius: 6px;
     height: 44px;
     line-height: 1.15;
-    padding: 20px 60px;
-    margin-bottom: 20px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
     margin-left:25px;
 }
     .regnskapsKnapp:hover {
-        text-decoration: none;
         color: white;
     }
 
 .regnskapsKnappTekst {
     color: #FFF;
+    text-align: center;
+}
+
+
+.siste-container {
+    margin-top: auto;
+    height: 80px;
+    width: auto;
+    background-color: #e3f1f8;
 }
 
 
@@ -146,7 +153,8 @@
 .m�tOssSeksjon h1 {
     padding-bottom: 20px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .kontaktOssBoks {
@@ -155,6 +163,7 @@
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    background-color: #e3f1f8;
 }
 
 .kontaktOssKort {
@@ -168,7 +177,8 @@
 }
 
 .kontaktOssKort h1 {
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: bolder;
     margin-bottom: 10px;
 }
 
@@ -182,15 +192,12 @@
     padding: 40px;
     
 }
-.partnereSeksjon{
-    margin-top:40px;
-}
 
-
-.partnerBakgrunn h2 {
+.partnerBakgrunn, h2 {
     text-align: center;
     padding: 20px;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .bildet {
@@ -445,11 +452,11 @@
       
         font-size: 15px;
        
-        padding: 20px 30px;
+        padding: 30px 30px;
     }
     
 
-        /**BOk seksjonen*/
+        /*Bok seksjonen*/
 
         .kontaktTekstboks h1 {
         font-size: 15px;
