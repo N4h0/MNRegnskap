@@ -103,7 +103,7 @@
 }
 
 .aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
-    background-color: #67747b;
+    background-color: #e3f1f8;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
