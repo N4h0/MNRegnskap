@@ -74,17 +74,12 @@ function Team() {
 
 
             <section className="section-white">
+                <h2 className="section-title">
+                    The team behind M&N Regnskap
+                </h2>
+                <p className="section-subtitle"> {message} </p>
 
                 <div className="container">
-                    <div className="row">
-
-                        <h2 className="section-title">
-                            The team behind M&N Regnskap
-                        </h2>
-                        <p className="section-subtitle"> {message} </p>
-
-                    </div>
-
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
@@ -93,7 +88,6 @@ function Team() {
                                 <div className="team-info">
                                     <p>Chartered accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
-
                                 </div>
                             </div>
                         </div>
@@ -142,7 +136,7 @@ function Team() {
                     </div>
                 </div>
             </section>
-            
+
         </>
     )
 }

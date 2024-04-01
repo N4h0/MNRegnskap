@@ -28,7 +28,7 @@
     .team-item h3 {
         margin: 20px 0 1px 0 !important;
         color: #454545;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         -webkit-transition: all 0.25s ease-in-out;
@@ -160,4 +160,6 @@
 .bold-text {
     font-weight: 1200;
 }
+
+
 
