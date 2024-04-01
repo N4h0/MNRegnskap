@@ -2,6 +2,9 @@
     font-family: 'Varela Round', sans-serif;
 }
 
+
+
+/*STORE BILDET*/
 .img-style {
     display: block;
     width: 100%;
@@ -72,7 +75,7 @@
     margin-top: 30px; /* Legg til margin over knappen */
 }
 
-/*Regnskap delen*/
+/*REGNSKAP DELEN*/
 
 .regnskapsSeksjon h2 {
     margin-top: 50px;
@@ -134,7 +137,12 @@
 .regnskapsKnappTekst {
     color: #FFF;
 }
-/*M�t oss*/
+
+
+
+/*MØT OSS*/
+
+
 .m�tOssSeksjon h1 {
     padding-bottom: 20px;
     text-align: center;
@@ -168,7 +176,7 @@
     font-size: 0.75rem; /* St�rrelse til "STATSAUTORISERT REGNSKAPSF�RER" */
 }
 
-/*V�re partnere*/
+/*VÅRE PARTNERE*/
 
 .partnereBakgrunn {
     padding: 40px;
@@ -179,23 +187,21 @@
 }
 
 
-
-
 .partnerBakgrunn h2 {
     text-align: center;
     padding: 20px;
-    font-size:35px;
+    font-size: 35px;
 }
 
-.slick-slide {
+.bildet {
     margin: 0 20px;
 }
 
-    .slick-slide img {
+    .bildet img {
         width: 100%;
     }
 
-.slick-slider {
+.slick-bilder {
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -213,26 +219,30 @@
     position: relative;
     top: 0;
     left: 0;
-    display: block
+    display: block;
 }
 
-.slick-slide {
+.bildet {
     display: none;
     float: left;
     height: 100%;
     min-height: 1px;
 }
 
-    .slick-slide img {
+    .bildet img {
         display: block;
     }
 
-.slick-initialized .slick-slide {
+.slick-initialized .bildet {
     display: block;
 }
 
 
-/*Kontakt oss*/
+
+
+
+
+/*KONTAKT OSS*/
 
 .kontaktBilde {
     display: flex; /* Aktiver flexbox */
@@ -302,7 +312,7 @@
 
 
 
-
+/**RESPONSIVITET*/
     @media (max-width:1026px) {
         .kontaktOssBoks {
             display: flex;
@@ -338,9 +348,6 @@
             font-size: 25px;
         }
 
-
-
-        /**Bok*/
 
 
     
@@ -380,7 +387,7 @@
 
 
 
-        /*Bok seksjonen*/
+    /*Bok seksjonen*/
 
     .kontaktKnapp{
         font-size:20px;

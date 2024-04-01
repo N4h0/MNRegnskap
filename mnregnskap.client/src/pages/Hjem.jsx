@@ -105,7 +105,7 @@ function Partnere({ language }) {
                     {
                         breakpoint: 529,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 3   
                         }
                     },
                     {
@@ -120,19 +120,18 @@ function Partnere({ language }) {
     }, []);
 
 
-    // JSX-koden
     return (
         <div className="partnereBakgrunn">
-            <h2 className="partner-tittel">{textData.our_partner }</h2>
-            <section className="customer-logos slider">
-                <div className="slide"><img src="./adidas.png" alt="logo" /></div>
-                <div className="slide"><img src="./facebook.png" alt="logo" /></div>
-                <div className="slide"><img src="./google.png" alt="logo" /></div>
-                <div className="slide"><img src="./instagram.png" alt="logo" /></div>
-                <div className="slide"><img src="./nike.png" alt="logo" /></div>
-                <div className="slide"><img src="./twitter.png" alt="logo" /></div>
-                <div className="slide"><img src="./uber.png" alt="logo" /></div>
-                <div className="slide"><img src="./youtube.png" alt="logo" /></div>
+            <h2 className="partner-tittel">{textData.our_partner}</h2>
+            <section className="customer-logos bilder">
+                <div className="bildet"><img src="./adidas.png" alt="logo" /></div>
+                <div className="bildet"><img src="./facebook.png" alt="logo" /></div>
+                <div className="bildet"><img src="./google.png" alt="logo" /></div>
+                <div className="bildet"><img src="./instagram.png" alt="logo" /></div>
+                <div className="bildet"><img src="./nike.png" alt="logo" /></div>
+                <div className="bildet"><img src="./twitter.png" alt="logo" /></div>
+                <div className="bildet"><img src="./uber.png" alt="logo" /></div>
+                <div className="bildet"><img src="./youtube.png" alt="logo" /></div>
             </section>
         </div>
     );
