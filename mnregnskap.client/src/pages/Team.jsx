@@ -1,84 +1,61 @@
 ﻿import './Team.css';
-
+import { LanguageContext } from '../languages/LanguageContext';
+import { useState, useContext} from 'react';
+import en from '../languages/en.json'; // Engelsk språkdata
+import no from '../languages/no.json'; // Norsk språkdata
 
 function Team() {
+    const {language } = useContext(LanguageContext);
+    return (
+        <>
+            <Test language={language } />
+        </>
+   )
+}
 
-    const Bildet = () => (
-
-        <div className="bilde-seksjon-img">
-            <img src="/teambilde.avif" alt="" className="img-style" />
-            <div className="tekst-i-midten">
-                {/*<h1>M&N</h1>
-                <h1>REGNSKAP</h1>
-                <h4>Vi tar vare p&aring; regnskapet!</h4>
-                <div className="bildet-seksjon-knapp">
-                    <button className="mer-info-knapp">MER INFO</button>
-                </div>*/}
-            </div>
-        </div>
-
-    );
-
-        let message = "Bak tallene står vi, din pålitelige partner for økonomisk suksess!"
-
+function Test({ language }) {
+    const data = language ==='norsk'? no:en
     return (
         <>
             <div className='aboutIs_box'>
                 <div className='aboutUs_box_hero'>
                     <div className='aboutUs_box_hero_left'>
-                        <h1>Historien vår </h1>
-                        <p>
-                        M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel 
-                        i ulike bransjer. Vi betjener kunder i Oslo og andre deler av Norge.
-                        </p>
-                        <p>
-                        Vårt team består av høyt 
-                        utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt i 2008 av Moosa Ali 
-                        Rashid og Naila Sohail Khokhar, begge med utdanning innen revisjon. Med årene har vi vokst i takt med 
-                        vårt klientnettverk.
-                        </p>
+                        <h1>{data.omOssOverskrift1} </h1>
+                        <p>{data.omOssBrødtekst1}</p>
+                        <p>{data.omOssBrødtekst2}</p>
                     </div>
                     <div className='aboutUs_box_hero_right'>
                         <div className="bilde-seksjon">
-                            <Bildet />
-                        </div>
-     
-                    </div>
-                </div>
-
-      
-                <div className='aboutUs_box_hero'>
-                    <div className='aboutUs_box_hero_left'>
-                        <div className="bilde-seksjon">
-                            <Bildet />
-                        </div>
-
-                    </div>
-                        <div className='aboutUs_box_hero_right'>
-                            <h1>Oss</h1>
-                            <p>
-                            M&N Regnskap har en høy faglig standard og gode rutiner for kvalitetssikring, da vi er oppmerksomme 
-                            på at regnskapsføring er forbundet med strenge krav og stramme tidsfrister. Vi tilbyr tjenester fra A 
-                            til Å og jobber i dag i stor grad digitalt, men vi tilpasser oss også klientenes ønsker om papirbaserte
-                             løsninger. La oss ta oss av regnskapet, slik at du kan fokusere på det du er best på!
-                            </p>
-                            <div className='bold-text'>
-                                <p>
-                                Konsentrer deg om det du er god på – Vi tar oss av regnskapet!
-                                </p>
+                            <div className="bilde-seksjon-img">
+                                <img src="/teambilde.avif" alt="" className="img-style" />
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div className='aboutUs_box_hero'>
+                    <div className='aboutUs_box_hero_left'>
+                        <div className="bilde-seksjon">
+                            <div className="bilde-seksjon-img">
+                                <img src="/teambilde.avif" alt="" className="img-style" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className='aboutUs_box_hero_right'>
+                        <h1>Oss</h1>
+                        <p>{data.omOssBrødtekst3}</p>
+                        <div className='bold-text'>
+                            <p>{data.omOssBrødtekst4}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
 
             <section className="section-white">
                 <h2 className="section-title">
-                    The team behind M&N Regnskap
+                    {data.omOssTeam}
                 </h2>
-                <p className="section-subtitle"> {message} </p>
-
+                <p className="section-subtitle"> {data.omOssOverskrift} </p>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
@@ -136,7 +113,6 @@ function Team() {
                     </div>
                 </div>
             </section>
-
         </>
     )
 }

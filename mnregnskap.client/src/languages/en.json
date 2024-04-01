@@ -1,11 +1,19 @@
-{ 
+{
   "home": "Home",
   "about": "About us",
   "deadlines": "Deadlines",
   "contact_us": "Contact Us",
   "english": "English",
   "norwegian": "Norwegian",
-  "language":  "Language",
+  "language": "Language",
+
+  "omOssOverskrift1": "Our history",
+  "omOssOverskrift2": "We are your partner behind your number.",
+  "omOssBrødtekst1": "M&N Regnskap are laying centrally on Alna and ahse extensive experience with accounting. Our costumers are both in Oslo and other parts of the country.",
+  "omOssBrødtekst2": "Our team consist of highly educated people with much experience within the field. The company was created by Moosa Ali Rashid and Naila Sohail Khokhar.",
+  "omOssBrødtekst3": "M&N Accounting maintains a high professional standard and robust quality assurance routines, aware that accounting comes with strict requirements and tight deadlines. We offer services from A to Z and work largely digitally, but also adapt to clients' desires for paper-based solutions. Let us handle the accounting, so you can focus on what you do best!",
+  "omOssBrødtekst4": "Focus on what you're good at – We'll take care of the accounting!",
+  "omOssTeam": "The team behind M&N Regnskap",
 
   "regnskap": "ACOUNTING",
   "home_page_text": "We take care of your accounting!",
