@@ -1,3 +1,8 @@
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .section-white {
     background:#fff;
     padding: 70px 0;
@@ -7,7 +12,7 @@
     background: #f4f5f6;
     text-align: center;
     margin: 20px 0;
-    padding: 50px, 20px, 40px, 20px;
+    padding: 50px 20px 40px 20px;
     border-radius: 8px 8px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -47,7 +52,6 @@
     .team-info p {
         color: #acacac;
         font-style: italic;
-        font-family: 'Varela Round', sans-serif;
     }
 
         .team-info::after {
@@ -125,7 +129,6 @@
     margin-top: 20px;
     font-size: 3rem;
     line-height: .5;
-    font-family: 'Varela Round', sans-serif;
 }
 
 .aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
@@ -133,7 +136,6 @@
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
-    font-family: 'Varela Round', sans-serif;
 }
 
 .aboutUs_box_title {
@@ -143,14 +145,12 @@
     .aboutUs_box_title h2 {
         font-size: 3rem;
         line-height: 1;
-        font-family: 'Varela Round', sans-serif;
     }
 
     .aboutUs_box_title p {
         font-size: 1.5rem;
         line-height: 1.2;
         width: 40%;
-        font-family: 'Varela Round', sans-serif;
     }
 
 .bilde-seksjon-img {

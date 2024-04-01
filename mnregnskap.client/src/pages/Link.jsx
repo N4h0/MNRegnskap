@@ -4,24 +4,24 @@ import './Link.css';
 const PDF_FILE_URL = "https://localhost:5173/file_pdf.pdf";
 function Link() {
     const downloadFileAtURL = (url) => {
-        //fuksjonen blob gjør at isteden for å åpne ny fane når man laster ned, så blir det lastet ned i samme fane under. 
+        //funksjonen blob gjør at istedenfor å åpne ny fane når man laster ned, så blir det lastet ned i samme fane under. 
         fetch(url)
             .then(response => response.blob())
             .then(blob => {
-            const blobURL = window.URL.createObjectURL(new Blob([blob]));
-            const fileName = url.split("/").pop();
-            const aTag = document.createElement("a");
-            aTag.href = blobURL;
-            aTag.setAttribute("download", fileName);
-            document.body.appendChild(aTag);
-            aTag.click();
-            aTag.remove();
-        });
-
+                const blobURL = window.URL.createObjectURL(new Blob([blob]));
+                const fileName = url.split("/").pop();
+                const aTag = document.createElement("a");
+                aTag.href = blobURL;
+                aTag.setAttribute("download", fileName);
+                document.body.appendChild(aTag);
+                aTag.click();
+                aTag.remove();
+            });
     };
+
     return (
         <>
-            <h1><strong>Frister</strong></h1>
+            <h1>Frister</h1>
             <div className="container">
                 <div className="box">
                     <h2>Sole Proprietorship</h2>
@@ -61,8 +61,17 @@ function Link() {
                 </div>
             </div>
             <div className="Link">
-                <button onClick={() => { downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file</button>
+                <h3>Important links</h3>
+                <ul>
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 1</a></li>
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 2</a></li>
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 3</a></li>
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 4</a></li>
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 5</a></li>
+                </ul>
             </div>
+
+
         </>
     );
 }

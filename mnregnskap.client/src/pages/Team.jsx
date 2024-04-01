@@ -109,7 +109,7 @@ function Team() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-6 col-md-4">
+                        <div className="col-sm-12 col-md-4">
                             <div className="team-item">
                                 <img src="/Naila.png" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
@@ -119,7 +119,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-4">
+                        <div className="col-sm-12 col-md-4">
                             <div className="team-item">
                                 <img src="/Naila.png" className="team-img" alt="pic" />
                                 <h3>Ibrahim Mughdal</h3>
@@ -129,7 +129,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-4">
+                        <div className="col-sm-12 col-md-4">
                             <div className="team-item">
                                 <img src="/Naila.png" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
