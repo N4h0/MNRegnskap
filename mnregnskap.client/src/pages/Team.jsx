@@ -78,8 +78,6 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
                         <div className="col-sm-12 col-md-4">
                             <div className="team-item">
                                 <img src="/Naila.png" className="team-img" alt="pic" />
@@ -113,6 +111,7 @@ function Test({ language }) {
                     </div>
                 </div>
             </section>
+
         </>
     )
 }

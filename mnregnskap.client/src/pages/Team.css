@@ -2,6 +2,10 @@
     font-family: 'Varela Round', sans-serif;
 }
 
+
+
+/*TEAM SEKSJONEN */
+
 .section-white {
     background:#fff;
     padding: 70px 0;
@@ -77,6 +81,10 @@
     border-radius: 10px;
 }
 
+
+
+
+/*OM OSS SEKSJONEN*/
 .aboutUs {
     width: 100%;
     margin-block: 5rem;
@@ -154,4 +162,12 @@
 }
 
 
+
+
+@media screen and (max-width: 700px) {
+    .aboutUs_box_hero_left h1 {
+        font-size: 2rem;
+     
+    }
+}
 
