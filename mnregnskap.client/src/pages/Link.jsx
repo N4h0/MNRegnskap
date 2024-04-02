@@ -61,7 +61,7 @@ function Link() {
                 </div>
             </div>
             <div className="Link">
-                <h3>Important links</h3>
+                <h2>Important links</h2>
                 <ul>
                     <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 1</a></li>
                     <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 2</a></li>

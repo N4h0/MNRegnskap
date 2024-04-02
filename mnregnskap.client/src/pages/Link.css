@@ -37,7 +37,7 @@
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    margin-top: 700px; 
+    margin-top: 350px; 
 }
     .Link ul {
         list-style-type: disc; 
@@ -70,11 +70,19 @@
     }
 
     .box h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
-    .box h3 {
-        font-size: 15px; 
+
+    .box h2 {
+        font-size: 19px;
+    }
+
+    .box h3,
+    .box ul,
+    .box ol,
+    .box li {
+        font-size: 15px;
     }
 
     .box p {
@@ -83,32 +91,94 @@
         margin-bottom: 15px; 
     }
     .Link {
-        margin-top: 0px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns child elements to the start (left) */
+    }
+
+    .Link h2 {
+        font-size: 19px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    .Link ul {
+        padding-left: 20px; /* Removes default padding */
+        list-style-type: none; /* Removes default list styles */
     }
 }
 /* Responsiv styling for middels skjermer */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         gap: 50px; 
     }
-}
 
-/* Responsiv styling for store skjermer (f.eks. iPad Air) */
-@media screen and (min-width: 1025px) {
     .box h1 {
         font-size: 40px;
     }
 
-    .box h2 {
-        font-size: 32px; 
+    .box h2,
+    .Link h2 {
+        font-size: 30px;
     }
 
     .box h3,
     .box p,
     .box ul,
     .box ol,
-    .box li {
-        font-size: 30px;
+    .box li,
+    .Link ul,
+    .Link li {
+        font-size: 25px;
+    }
+
+    .Link {
+        margin-top: 10px;
+    }
+
+
+/* Responsiv styling for store skjermer (f.eks. iPad Air) */
+    @media screen and (min-width: 1025px) {
+        .box h1 {
+            font-size: 40px;
+        }
+
+        .box h2 {
+            font-size: 32px;
+        }
+
+        .box h3,
+        .box p,
+        .box ul,
+        .box ol,
+        .box li {
+            font-size: 30px;
+        }
+
+        .Link {
+            margin-top: 10px;
+        }
+    }
+
+    /* Responsiv styling for større skjermer som 912 x 1368 */
+    @media screen and (min-width: 768px) {
+        .container {
+            gap: 30px;
+        }
+
+        .Link {
+            margin-top: 700px; 
+        }
+
+        .Link h2 {
+            font-size: 22px; 
+        }
+
+        .Link ul {
+            font-size: 16px; 
+        }
     }
 }
-/*dette trenger å fikses, må legge til større skriftstørrelse for både ol,ul, oh h1*/
+
+
