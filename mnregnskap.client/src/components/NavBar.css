@@ -2,70 +2,120 @@
 * {
     font-family: 'Varela Round', sans-serif;
 }
-
-.topnav, #navItems {
+/* Tilpasset for Flexbox */
+.topnav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between; /* Sikrer at barna fordeles fra venstre til høyre */
+    overflow: hidden;
 }
 
-.navTekst {
-    display: inline-block; /*M� ha med for at span blir lik som resten*/
-    color: black;
-    text-align: center;
-    margin: 0 10px;
-    text-decoration: none; /*Fjerne strek under linkane*/
-    font-size: 17px;
-    font-weight: 400;
-}
 
-#navItems {
-    margin-left: auto;
-}
-
-.topnav a:hover {
-    text-decoration: none; /*Fjerne strek under linkane*/
-}
-
-.dropDownContent {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    z-index: 1; /* Dropdown p� toppen */
-    right: 0;
-    background-color: #fff;
-}
-
-.dropDown:hover .dropDownContent {
-    display: block;
-}
-
-#dropDownIkon {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    margin: 10px;
-}
-
-@media (max-width: 550px) {
-    #navItems {
-        display: none
-    }
-    #dropDownIkon {
+    .topnav a {
         display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; /* Fjerne strek under linkene */
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 10px;
     }
-    #dropDownIkon:hover + #navItems {
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+    .topnav .icon {
+        display: none;
+    }
+
+
+.left-aligned-items {
+    /* Beholder standard flex-oppførsel */
+}
+
+.right-aligned-items {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* Justerer navigasjonselementene til høyre */
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        justify-content: space-between;
+    }
+
+        .topnav a, .topnav .icon, .right-aligned-items a {
+            display: none;
+        }
+
+            .topnav a.icon, .topnav .icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+        .topnav.responsive .right-aligned-items, .topnav.responsive a, .topnav.responsive .icon {
+            display: block;
+            text-align: left;
+        }
+
+        .topnav.responsive .right-aligned-items {
+            flex-direction: column;
+        }
+
+        .topnav.responsive .icon {
+            position: static; /* Justerer ikonets posisjon i responsiv modus */
+        }
+}
+@media screen and (max-width: 600px) {
+    .topnav {
+        justify-content: space-between;
+    }
+
+    .topnav a, .topnav .icon {
+        display: none;
+    }
+
+    .topnav a.icon, .topnav .icon {
         display: block;
         position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        z-index: 1; /* Dropdown p� toppen */
         right: 0;
-        background-color: #fff;
+        top: 0;
+        padding: 14px 16px;
+        color: black;
+        font-size: 17px;
+        text-align: center;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topnav.responsive a, .topnav.responsive .icon {
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .icon {
+        align-self: flex-end;
     }
 }
