@@ -1,5 +1,4 @@
 /* HELE CONTAINER MED INNHOLD*/
-
 .container {
     border-top: 6px solid #000;
     display: flex;
@@ -7,27 +6,59 @@
     align-items: center;
 }
 
+/* TEKST BOKSEN*/
 .text-container {
     width: 500px;
     height: 400;
-    margin: 20px;
-    margin-right: 50px;
+    margin: -40px;
     margin-top: 70px;
+    margin-left: 20px;
 }
 
-.image-container {
-    width: 290px;
-    height: 500px;
-    margin-left: 40px;
+/* PARAGRAF*/
+.text-container p {
+    font-size: 19px;
+    text-align: left;
+    color:rgb(37, 65, 122);
+    font-weight: 800;
 }
 
-.logo1, .logo2 {
-    width: 70px;
-    height: 70px;
+/*OVERSKRIFT*/
+.text-container h1{
+    font-size: 100px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*Skygge med forskyvning*/
+    color:rgb(37, 65, 122);
 }
 
-.logo3, .logo4 {
+.with-line {
+    position: relative;
+}
+
+.with-line::after {
+    content: ''; /* Legger til et visuelt element (linje) etter teksten */
+    position: absolute; /* Posisjonerer linjen relativt til forelder (span) */
+    bottom: -2px; /* Plasserer linjen rett under teksten */
+    left: 0; /* Starter linjen fra venstre kant av teksten */
+    width: 100%; /* Strekker linjen over hele bredden av teksten */
+    border-bottom: 4px solid black; /* Definerer egenskaper for linjen (farge, tykkelse, stil) */
+  }
+
+/*LOGOENE I TEKST BOKSEN*/
+.logo1, .logo2, .logo3, .logo4 {
     width: 50px;
     height: 50px;
+    border: 2px solid rgb(42, 51, 130);
+    margin: 10px;
 }
+
+/* BILDE BOKS*/
+
+.astronaut-bilde {
+    width: 150px;
+    height: auto;
+}
+
+
+
 
