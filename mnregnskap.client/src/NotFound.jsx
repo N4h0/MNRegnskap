@@ -6,7 +6,8 @@ const NotFound = () => {
     <div className="container">
       <div className="text-container">
         <h1><span className="with-line" >4</span>04</h1>
-        <p>Oisann... Vi fant ikke siden du lette etter! Sikker på at du har skrevet inn riktig URL? Prøv på nytt herifra:</p>
+        <p><span className="uh-oh"> Uh oh!</span> ... Ser ut som at noen har bokført denne siden på feil konto! Men fortvil ikke, vi hjelper deg med å balansere 
+          bøkene igjen. Bruk menyen for å finne veien tilbake:</p>
           <div className="logo-container">
             <a href="/hjem">
               <img src="/logo1.png" alt="Hjem" className="logo1" />
@@ -20,7 +21,7 @@ const NotFound = () => {
         </div>
       </div>
       <div className="image-container">
-        <img src="astronaut.png" alt="astronaut" className="astronaut-picture" />
+        <img src="tyv.png" alt="tyv" className="tyv-picture" />
       </div>
     </div>
     

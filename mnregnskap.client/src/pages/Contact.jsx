@@ -14,6 +14,9 @@ function Contact() {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    e.target.user_name.value = '';
+                    e.target.user_email.value = '';
+                    e.target.user_message.value = '';
                 },
                 (error) => {
                     console.log('FAILED...', error.text);

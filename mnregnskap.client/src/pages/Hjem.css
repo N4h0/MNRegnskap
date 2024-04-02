@@ -257,6 +257,8 @@
     align-items: center; /* Dette vil også bli ignorert for absolutt posisjonerte barn */
     position: relative; /* Beholder posisjonering */
     height: 60vh; /* Juster høyden etter behov */
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
     .kontaktBilde img {
