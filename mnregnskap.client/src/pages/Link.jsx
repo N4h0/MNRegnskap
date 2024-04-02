@@ -4,7 +4,7 @@ import './Link.css';
 const PDF_FILE_URL = "https://localhost:5173/file_pdf.pdf";
 function Link() {
     const downloadFileAtURL = (url) => {
-        //funksjonen blob gjør at istedenfor å åpne ny fane når man laster ned, så blir det lastet ned i samme fane under. 
+        //funksjonen blob vil laste ned dokumentet i samme fane, istedet for enda en fane 
         fetch(url)
             .then(response => response.blob())
             .then(blob => {
