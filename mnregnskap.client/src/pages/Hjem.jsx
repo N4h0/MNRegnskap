@@ -126,14 +126,15 @@ function Partnere({ language }) {
         <div className="partnereBakgrunn">
             <h2 className="partner-tittel">{textData.our_partner}</h2>
             <section className="customer-logos bilder">
-                <div className="bildet"><img src="./adidas.png" alt="logo" /></div>
-                <div className="bildet"><img src="./facebook.png" alt="logo" /></div>
-                <div className="bildet"><img src="./google.png" alt="logo" /></div>
-                <div className="bildet"><img src="./instagram.png" alt="logo" /></div>
-                <div className="bildet"><img src="./nike.png" alt="logo" /></div>
-                <div className="bildet"><img src="./twitter.png" alt="logo" /></div>
-                <div className="bildet"><img src="./uber.png" alt="logo" /></div>
-                <div className="bildet"><img src="./youtube.png" alt="logo" /></div>
+                <div className="bildet"><img src="./new-dehli.png" alt="logo" /></div>
+                <div className="bildet"><img src="./masala_politics_logo.png" alt="logo" /></div>
+                <div className="bildet"><img src="./snap.png" alt="logo" /></div>
+                <div className="bildet"><img src="./bull_logo.png" alt="logo" /></div>
+                <div className="bildet"><img src="./baljit-logo.png" alt="logo" /></div>
+                <div className="bildet"><img src="./baljiit.png" alt="logo" /></div>
+                <div className="bildet"><img src="./car.png" alt="logo" /></div>
+
+
             </section>
         </div>
     );
