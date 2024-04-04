@@ -8,6 +8,7 @@
     z-index: 999;
     border-radius: 70%;
 
+
 }
 
 .chatButton {
@@ -39,19 +40,37 @@
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
     justify-content: space-between;
-    padding: 10px 10px;
+    justify-content: flex-start; /* Elementene starter fra venstre side */
 }
 
-.chatHeader h2 {
+.chatLogo {
+    /* Størrelse og plassering av logoen */
+    height: 70px; 
+}
+
+.chatHeaderText span{
+    font-size:14px;
+}
+.chatHeaderText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+}
+
+.chatheader-overskrift {
+    font-size: 19px;
     margin: 0;
-    font-size: 18px;
+    font-weight: bold;
 }
 
 .closeChat {
-    background: none;
+    margin-left: auto; /* Skyver denne knappen til høyre kant av headeren */
+    background: transparent;
     border: none;
-    color:black;
+    color: black;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 /* Chat-body */
