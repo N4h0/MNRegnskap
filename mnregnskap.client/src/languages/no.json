@@ -67,7 +67,35 @@
   "organization_number": "Organisasjon nummer",
   "ok": "Godkjenninger",
 
-  "Ta": "Kontakt"
-}
+  "Ta": "Kontakt",
+
+
+
+  
+    "deadlinesTitle": "Frister",
+    "annualAccountingDeadlinesTitle": "Årets regnskapsfrister",
+    "annualAccountingDeadlinesText": "Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver. Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle aktuelle frister her. Nedenfor følger en oversikt over de viktigste og mest vanlige fristene som bedriftseiere må ta hensyn til!",
+    "shareholderDeclarationTitle": "Aksjonærregisteroppgaven",
+    "shareholderDeclarationDeadline": "Frist: 31. januar",
+    "shareholderDeclarationFor": "Hvem: Alle AS.",
+    "VATDeadlinesTitle": "Mva-frister",
+    "VATDeadlineBiMonthly": "Mva (annenhver måned)",
+    "VATDeadlineBiMonthlyDates": "Frist: 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb",
+    "VATDeadlineBiMonthlyFor": "Hvem: Alle mva-registrerte som ikke har årlig mva.",
+    "VATDeadlineAnnual": "Mva (årlig)",
+    "VATDeadlineAnnualDate": "Frist: 10. mars",
+    "VATDeadlineAnnualFor": "Hvem: Alle som har årlig mva.",
+    "VATAnnualNote": "Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.",
+    "employmentDeclarationTitle": "A-melding",
+    "employmentDeclarationDeadline": "Frist: Hver måned (innen den 5. påfølgende måned).",
+    "employmentDeclarationFor": "Hvem: Alle som utbetaler lønn.",
+    "advanceTaxTitle": "Forskuddsskatt",
+    "advanceTaxDeadlineForSoleProprietorship": "Frist for ENK: 15. mar. / 15. jun. / 15. sept. / 15. des.",
+    "advanceTaxDeadlineForCorporation": "Frist for AS: 15. feb. / 15. apr.",
+    "advanceTaxFor": "Hvem: Alle skattepliktige."
+  }
+
+
+
 
 
