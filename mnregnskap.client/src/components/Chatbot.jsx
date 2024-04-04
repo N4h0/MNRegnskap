@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faTimes, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css';
@@ -16,6 +16,14 @@ function Chatbot() {
     const handleInputChange = (e) => {
         setMessage(e.target.value);
     };
+
+    const sendWelcomeMessage = () => {
+        if (combinedMessages.length === 0) { // Sjekk at det ikke allerede er meldinger
+            const welcomeMessage = { type: 'bot', content: 'Hei. Velkommen! Hva lurer du på i dag?', time: new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' }) };
+            setCombinedMessages([welcomeMessage]);
+        }
+    };
+
 
     const sendMessage = () => {
         if (message.trim() !== '') {
@@ -40,7 +48,7 @@ function Chatbot() {
                 })
                 .catch((error) => {
                     console.error('Feil med returnering av melding fra robot:', error);
-                    const errorMessage = { type: 'bot', content: "Det skjedde en feil, kj�rer serveren?", time: formattedTime };
+                    const errorMessage = { type: 'bot', content: "Det skjedde en feil, kjører serveren?", time: formattedTime };
                     setCombinedMessages(prev => [...prev, errorMessage]);
                 });
         }
@@ -51,6 +59,12 @@ function Chatbot() {
             chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
         }
     }, [combinedMessages]);
+    useEffect(() => {
+        if (isOpen) {
+            sendWelcomeMessage();
+        }
+        // Fjern avhengighet til combinedMessages for å unngå re-kjøring når de endres
+    }, [isOpen]);
 
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
