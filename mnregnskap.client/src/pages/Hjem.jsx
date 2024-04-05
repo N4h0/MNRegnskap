@@ -147,12 +147,12 @@ function Møtoss({ language }) {
             <h1>{textData.meet_us }</h1>
         <div className="kontaktOssBoks">
             <div className="kontaktOssKort">
-                <img src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                    <img className="kontaktOssKort-img" src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                 <h1>MOOSA ALI RASHID</h1>
                     <p>{textData.charted_accountant}</p>
             </div>
             <div className="kontaktOssKort">
-                <img src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                <img className="kontaktOssKort-img" src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                 <h1>NAILA SOHAIL KHOKHAR</h1>
                     <p>{textData.charted_accountant}</p>
             </div>

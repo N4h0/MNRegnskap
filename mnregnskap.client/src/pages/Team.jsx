@@ -78,9 +78,9 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/Naila.png" className="team-img" alt="pic" />
+                                <img src="/haseeb.JPG" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -88,9 +88,9 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/Naila.png" className="team-img" alt="pic" />
+                                <img src="/ibrahim.jpg" className="team-img" alt="pic" />
                                 <h3>Ibrahim Mughdal</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -98,9 +98,19 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/Naila.png" className="team-img" alt="pic" />
+                                <img src="/asad.JPG" className="team-img" alt="pic" />
+                                <h3>Asad Haider Khan</h3>
+                                <div className="team-info">
+                                    <p>Accountant</p>
+                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-12 col-md-3">
+                            <div className="team-item">
+                                <img src="/datter.JPG" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>

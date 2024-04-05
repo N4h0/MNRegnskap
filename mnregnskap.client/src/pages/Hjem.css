@@ -171,10 +171,14 @@
     flex: 50%;
 }
 
-.kontaktOssKort img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
+    .kontaktOssKort-img {
+    
+        border-radius: 50%;
+        margin-bottom: 20px;
+        max-width: 250px; /* Set a maximum width for the images */
+        height: auto;
+        
+    }
 
 .kontaktOssKort h1 {
     font-size: 40px;
