@@ -100,7 +100,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/asad.JPG" className="team-img" alt="pic" />
+                                <img src="/asad.jpg" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -110,7 +110,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/datter.JPG" className="team-img" alt="pic" />
+                                <img src="/datter.jpg" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
