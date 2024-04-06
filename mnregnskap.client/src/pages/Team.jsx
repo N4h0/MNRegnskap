@@ -80,7 +80,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/haseeb.JPG" className="team-img" alt="pic" />
+                                <img src="/Haseeb.png" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -90,7 +90,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/ibrahim.jpg" className="team-img" alt="pic" />
+                                <img src="/Ibrahim.png" className="team-img" alt="pic" />
                                 <h3>Ibrahim Mughdal</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -100,7 +100,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/asad.jpg" className="team-img" alt="pic" />
+                                <img src="/Asad.png" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -110,8 +110,8 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/datter.jpg" className="team-img" alt="pic" />
-                                <h3>Asad Haider Khan</h3>
+                                <img src="/Natasha.png" className="team-img" alt="pic" />
+                                <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>

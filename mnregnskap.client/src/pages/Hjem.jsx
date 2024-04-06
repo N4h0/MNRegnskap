@@ -52,8 +52,9 @@ function Regnskap({ language }) {
 
     return (
         <>
-            <h2>{textData.ambitions_expertise}</h2>
+        
             <div className="regnskapsBoks">
+            <h2>{textData.ambitions_expertise}</h2>
                 <div className="regnskapsKort">
                     <img src="/kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
@@ -144,19 +145,22 @@ function Møtoss({ language }) {
 
     return (
     <>
-            <h1>{textData.meet_us }</h1>
-        <div className="kontaktOssBoks">
-            <div className="kontaktOssKort">
-                    <img className="kontaktOssKort-img" src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                <h1>MOOSA ALI RASHID</h1>
-                    <p>{textData.charted_accountant}</p>
+            <div className="kontaktOssBoks">
+                <div className="kontaktOssHeader">
+                    <h1>{textData.meet_us }</h1>
+                </div>
+                <div className="kontaktOssKort">
+                        <img className="kontaktOssKort-img" src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <h1>MOOSA ALI RASHID</h1>
+                        <p>{textData.charted_accountant}</p>
+                </div>
+                <div className="kontaktOssKort">
+                        <img className="kontaktOssKort-img" src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <h1>NAILA SOHAIL KHOKHAR</h1>
+                        <p>{textData.charted_accountant}</p>
+                </div>
             </div>
-            <div className="kontaktOssKort">
-                <img className="kontaktOssKort-img" src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                <h1>NAILA SOHAIL KHOKHAR</h1>
-                    <p>{textData.charted_accountant}</p>
-            </div>
-        </div>
+
         </>
     );
 }

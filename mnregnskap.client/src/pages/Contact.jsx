@@ -1,3 +1,4 @@
+/* import React, { useState } from 'react'; */
 import emailjs from '@emailjs/browser'; // Importer emailjs
 import map from '../assets/map.png';
 import phone from '../assets/phone.png';
@@ -5,6 +6,8 @@ import message from '../assets/message.png';
 import './Contact.css';
 
 function Contact() {
+    // const [showSuccessMessage, setShowSuccessMessage] = useState(false); 
+
     // Funksjon for å sende e-post via emailjs
     const sendEmail = (e) => {
         e.preventDefault();
@@ -13,13 +16,19 @@ function Contact() {
             .sendForm("desig4344.gmail.com", "template_6rs1lh8", e.target, { publicKey: "KyNlFb-WjIs15bWeo" })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    /*
+                    console.log('Eposten er sendt!');    //vis popup melding
+                    setShowSuccessMessage(true);         //reset skjemaet etter vellykket sending
+                    e.target.reset();
+                    */
+
+                    console.log('Suksess!');
                     e.target.user_name.value = '';
                     e.target.user_email.value = '';
                     e.target.user_message.value = '';
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    console.log('Noe gikk galt:', error.text);
                 },
             );
     };
