@@ -24,31 +24,31 @@ padding: 5.34em 6.67em;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Justerer barna (innholdet) til venstre */
-    max-width: 800px; /* Setter maksimal bredde på boksen */
+    max-width: 800px; /* Setter maksimal bredde pï¿½ boksen */
     margin: 0 auto; /* Sentrerer boksen horisontalt */
-    padding: 20px; /* Legger til litt padding for å gi teksten plass innenfor boksen */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for å løfte boksen fra bakgrunnen */
-    background-color: #fff; /* Setter bakgrunnsfargen til hvit for å skille den fra siden */
+    padding: 20px; /* Legger til litt padding for ï¿½ gi teksten plass innenfor boksen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for ï¿½ lï¿½fte boksen fra bakgrunnen */
+    background-color: #fff; /* Setter bakgrunnsfargen til hvit for ï¿½ skille den fra siden */
     border-radius: 8px;
 }
-}
+
 
 
 
 .link {
-    display: flex; /* Gjør containeren fleksibel */
+    display: flex; /* Gjï¿½r containeren fleksibel */
     flex-direction: column; /* Elementene organiseres i en kolonne */
     align-items: flex-start; /* Justerer linkene til venstre */
-    max-width: 800px; /* Setter maksimal bredde på boksen */
-    margin: 0 auto 20px; /* Sentrerer boksen horisontalt og legger til margin på bunnen */
-    padding: 20px; /* Legger til litt padding for å gi teksten plass innenfor boksen */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for å løfte boksen fra bakgrunnen */
-    background-color: #fff; /* Setter bakgrunnsfargen til hvit for å skille den fra siden */
-    border-radius: 8px; /* Litt avrundede hjørner for et mykere utseende */
+    max-width: 800px; /* Setter maksimal bredde pï¿½ boksen */
+    margin: 0 auto 20px; /* Sentrerer boksen horisontalt og legger til margin pï¿½ bunnen */
+    padding: 20px; /* Legger til litt padding for ï¿½ gi teksten plass innenfor boksen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for ï¿½ lï¿½fte boksen fra bakgrunnen */
+    background-color: #fff; /* Setter bakgrunnsfargen til hvit for ï¿½ skille den fra siden */
+    border-radius: 8px; /* Litt avrundede hjï¿½rner for et mykere utseende */
 }
 
     .link h2 {
-        color: #244368; /* Setter farge på overskriften */
+        color: #244368; /* Setter farge pï¿½ overskriften */
         margin-bottom: 10px; /* Legger til litt avstand mellom overskriften og linkene */
     }
 
@@ -62,12 +62,12 @@ padding: 5.34em 6.67em;
     }
 
     .link a {
-        color: #000; /* Setter fargen på linkene */
+        color: #000; /* Setter fargen pï¿½ linkene */
         text-decoration: none; /* Fjerner understrekingen fra linker */
     }
 
         .link a:hover {
-            text-decoration: underline; /* Legger til understreking når man holder musepekeren over */
+            text-decoration: underline; /* Legger til understreking nï¿½r man holder musepekeren over */
         }
 
 /* Responsiv styling for mindre skjermer */
@@ -151,7 +151,7 @@ padding: 5.34em 6.67em;
         }
     }
 
-    /* Responsiv styling for større skjermer som 912 x 1368 */
+    /* Responsiv styling for stï¿½rre skjermer som 912 x 1368 */
     @media screen and (min-width: 768px) {
         .container {
             gap: 30px;

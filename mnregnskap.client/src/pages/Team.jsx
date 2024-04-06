@@ -91,7 +91,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
                                 <img src="/Ibrahim.png" className="team-img" alt="pic" />
-                                <h3>Ibrahim Mughdal</h3>
+                                <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>

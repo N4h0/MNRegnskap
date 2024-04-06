@@ -45,12 +45,12 @@
     gap: 3rem;
 }
 
-.aboutUs_box_hero_left h1 {
+.aboutUs_box_hero_left h1, .aboutUs_box_hero_right h1 {
     font-size: 3rem;
     line-height: .5;
 }
 
-.aboutUs_box_hero_left p {
+.aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
     font-size: 1.5rem;
     line-height: 1.5;
 }
