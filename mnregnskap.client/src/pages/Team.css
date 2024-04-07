@@ -11,6 +11,10 @@
     padding: 70px 0;
 }
 
+.section-title {
+    font-family: 'Lato', sans-serif;
+}
+
 .team-item {
     background: #f4f5f6;
     text-align: center;
@@ -73,15 +77,13 @@
 }
 
 .team-img {
-    max-width: 140px;
+    max-width: 200px;
     padding: 6px 6px;
     background-color: #dedede;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 10px;
 }
-
-
 
 
 /*OM OSS SEKSJONEN*/
@@ -101,7 +103,16 @@
     align-items: center;
     gap: 3rem;
 }
+    .aboutUs_box_hero.first {
+      
+        grid-template-areas: "tekst bilde";
+    }
 
+    /* For den andre seksjonen hvor teksten er til høyre */
+    .aboutUs_box_hero.second {
+     
+        grid-template-areas: "bilde tekst";
+    }
 .aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
     background-color: #e3f1f8;
     transform: scale(1.1);
@@ -129,6 +140,8 @@
     margin-top: 20px;
     font-size: 3rem;
     line-height: .5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
 }
 
 .aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
@@ -136,6 +149,8 @@
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
+    padding: 10px;
+    line-height: 28px;
 }
 
 .aboutUs_box_title {
@@ -164,10 +179,25 @@
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 729px) {
     .aboutUs_box_hero_left h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
      
     }
+    .aboutUs_box_hero {
+       
+        gap: 2.3rem;
+    }
 }
+
+@media screen and (max-width: 700px) {
+    .aboutUs_box_hero.first, .aboutUs_box_hero.second {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tekst"
+            "bilde";
+    }
+}
+
+
 
