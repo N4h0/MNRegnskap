@@ -124,7 +124,7 @@ function Partnere({ language }) {
 
 
     return (
-        <div className="partnereBakgrunn">
+        <div className="partnerBakgrunn">
             <h2 className="partner-tittel">{textData.our_partner}</h2>
             <section className="customer-logos bilder">
                 <div className="bildet"><img src="./new-dehli.png" alt="logo" /></div>
@@ -150,7 +150,7 @@ function Møtoss({ language }) {
                     <h1>{textData.meet_us }</h1>
                 </div>
                 <div className="kontaktOssKort">
-                        <img className="kontaktOssKort-img" src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <img className="kontaktOssKort-img" src="./Moosa.jpg" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                         <h1>MOOSA ALI RASHID</h1>
                         <p>{textData.charted_accountant}</p>
                 </div>

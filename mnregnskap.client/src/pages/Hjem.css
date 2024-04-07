@@ -215,7 +215,6 @@
     .kontaktOssKort-img {
         border-radius: 50%;
         margin-bottom: 20px;
-        width: 270px; /* Set a maximum width for the images */
         height: 272px;
         
     }
@@ -232,10 +231,10 @@
 
 /* --------------------------- VÅRE PARTNERE --------------------------- */
 
-.partnereBakgrunn {
+.partnerBakgrunn {
     padding: 80px;
-    
 }
+
 
 .partnerBakgrunn, h2 {
     text-align: center;
@@ -329,7 +328,7 @@
 
 .kontaktTekstboks h1 { /*Hovudtittel*/
     font-family: 'Lato', sans-serif;
-    font-size: 32px;
+    font-size: 25px;
     letter-spacing: 2px;
     line-height: 10px;
     color: rgb(255, 255, 255);
@@ -387,6 +386,7 @@
         }
         .kontaktTekstboks {
             padding-top: 0px;
+           width:100%
         }
     }
 
@@ -419,43 +419,80 @@
         color: black;
         text-shadow: 10px 10px 20px #000000;
     }
+
+
+
+
   
 }
 
+@media (max-width:653){
+    .regnskapsKort {
+        margin-left:20px;
+}
+    .regnskapsKnapp {
+     margin-left:0px;
+    }
+
+}
 
 @media (max-width: 529px) {
 
-    /*Om oss seksjonen */
-    .kontaktOssKort {
-        flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
+
+    /*Bilde seksjon*/
+
+    .bildeTekst h2 {
+        padding: 0px;
+        font-size: 15px;
+    }
+    .bildeKnapp {
+        margin-top: 0px;
     }
 
-        .kontaktOssKort img {
-            max-width: 150px; /* Reduserer maksbredde på bildet */
-        }
+    /*kort*/
+    .regnskapsSeksjon h2 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .regnskapsKort {
+        margin-left:0px;
+    }
 
-        .kontaktOssKort h1{
-            font-size: 2rem; /* Justerer skriftstørrelsen ned */
-        }
+        /*Om oss seksjonen */
+        .kontaktOssKort {
+        flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
+    }
+            .kontaktOssKort img {
+                max-width: 250px;
+            }
+
         .kontaktOssKort p {
             font-size: 1rem; /* Justerer skriftstørrelsen ned */
         }
 
+        /*PARTNER SEKSJOE**/
 
+        .partnerBakgrunn{
+            padding:30px;
+        }
 
-    /*Bok seksjonen*/
+    .partner-tittel {
+ 
+        font-size: 34px;
+    }
+        /*Bok seksjonen*/
 
-    .kontaktKnapp{
+        .kontaktKnapp{
         font-size:20px;
     }
     .kontaktTekstboks {
         transform: translateY(-55%);
         padding-left: 10px;
-        width: 70%;
+        width: 90%;
     }
 
         .kontaktTekstboks h1 {
-            font-size: 20px;
+            font-size: 14px;
         }
 
     .kontaktKnapp {
@@ -464,58 +501,102 @@
     }
     }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
     .bildeTekst h2 {
-        padding: 10px
+        padding: 0px
     }
+
     .bildeTekst h1 {
         font-size: 35px;
     }
-}
 
-@media (max-width: 281px) {
-
-
-    /*Bilde seksjonen*/
-
-    .bildeTekst h1 {
-        font-size: 25px;
-    }
-
-    .bildeTekst h2 {
-        padding: 1px;
-    }
     .bildeKnapp {
-        padding: 5px 10px;
+        padding: 5px 20px;
         font-size: 0.7rem;
     }
 
-        .bildeTekst h2 {
+    .bildeSeksjon img {
+        height: 200px;
+    }
+
+    .partnerBakgrunn {
+        padding: 20px;
+    }
+
+    .partner-tittel {
+        font-size: 25px;
+    }
+
+    .kontaktOssKort h1 {
         font-size: 15px;
     }
 
+    .kontaktOssKort-img {
+        height: 200px;
+    }
 
-        /*Kort seksjoen*/
+    .kontaktOssKort p {
+        font-size: 0.7rem;
+    }
 
-    .regnskapsKnapp {
-      
-        font-size: 15px;
+    .kontaktTekstboks {
+        padding-top: 50px;
+    }
+        .kontaktTekstboks p {
        
-        padding: 30px 30px;
-    }
-    
-
-        /*Bok seksjonen*/
-
+            font-size: 14px;
+        }
         .kontaktTekstboks h1 {
-        font-size: 15px;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+    .kontaktKnapp {
+        
+        padding: 10px 10px;
     }
-    .kontaktTekstboks p {
-       
-        font-size: 15px;
-    }
-        .kontaktKnapp {
-        font-size: 10px;
-      
-    }
-}
+
+ @media (max-width: 281px) {
+
+
+/*Bilde seksjonen*/
+
+     .bildeTekst h1 {
+         font-size: 25px;
+       }
+      bildeTekst h2 {
+       padding: 0px;
+      }
+
+       .bildeKnapp {
+         padding: 5px 10px;
+          font-size: 0.7rem;
+      }
+
+    .bildeTekst h2 {
+     font-size: 15px;
+                }
+
+
+                /*Kort seksjoen*/
+
+                .regnskapsKnapp {
+                    font-size: 15px;
+                    padding: 30px 30px;
+                }
+
+
+                /*Bok seksjonen*/
+
+                .kontaktTekstboks h1 {
+                    font-size: 15px;
+                }
+
+                .kontaktTekstboks p {
+                    font-size: 15px;
+                }
+
+                .kontaktKnapp {
+                    font-size: 10px;
+                }
+            }

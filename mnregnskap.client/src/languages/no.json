@@ -71,29 +71,59 @@
 
 
 
-  
-    "deadlinesTitle": "Frister",
-    "annualAccountingDeadlinesTitle": "Årets regnskapsfrister",
-    "annualAccountingDeadlinesText": "Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver. Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle aktuelle frister her. Nedenfor følger en oversikt over de viktigste og mest vanlige fristene som bedriftseiere må ta hensyn til!",
-    "shareholderDeclarationTitle": "Aksjonærregisteroppgaven",
-    "shareholderDeclarationDeadline": "Frist: 31. januar",
-    "shareholderDeclarationFor": "Hvem: Alle AS.",
-    "VATDeadlinesTitle": "Mva-frister",
-    "VATDeadlineBiMonthly": "Mva (annenhver måned)",
-    "VATDeadlineBiMonthlyDates": "Frist: 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb",
-    "VATDeadlineBiMonthlyFor": "Hvem: Alle mva-registrerte som ikke har årlig mva.",
-    "VATDeadlineAnnual": "Mva (årlig)",
-    "VATDeadlineAnnualDate": "Frist: 10. mars",
-    "VATDeadlineAnnualFor": "Hvem: Alle som har årlig mva.",
-    "VATAnnualNote": "Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.",
-    "employmentDeclarationTitle": "A-melding",
-    "employmentDeclarationDeadline": "Frist: Hver måned (innen den 5. påfølgende måned).",
-    "employmentDeclarationFor": "Hvem: Alle som utbetaler lønn.",
-    "advanceTaxTitle": "Forskuddsskatt",
-    "advanceTaxDeadlineForSoleProprietorship": "Frist for ENK: 15. mar. / 15. jun. / 15. sept. / 15. des.",
-    "advanceTaxDeadlineForCorporation": "Frist for AS: 15. feb. / 15. apr.",
-    "advanceTaxFor": "Hvem: Alle skattepliktige."
-  }
+
+  "deadlinesTitle": "Frister",
+  "annualAccountingDeadlinesTitle": "Årets regnskapsfrister",
+  "annualAccountingDeadlinesText": "Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver. Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle aktuelle frister her. Nedenfor følger en oversikt over de viktigste og mest vanlige fristene som bedriftseiere må ta hensyn til!",
+  "shareholderDeclarationTitle": "Aksjonærregisteroppgaven",
+  " deadline": "frist:",
+  "shareholderDeclarationDeadline": "31. januar",
+  "who": "Hvem:",
+
+  "shareholderDeclarationFor": "Alle AS.",
+  "VATDeadlinesTitle": "Mva-frister",
+  "VATDeadlineBiMonthly": "Mva (annenhver måned)",
+  "VATDeadlineBiMonthlyDates": "Frist: 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb",
+  "VATDeadlineBiMonthlyFor": "Hvem: Alle mva-registrerte som ikke har årlig mva.",
+  "VATDeadlineAnnual": "Mva (årlig)",
+  "VATDeadlineAnnualDate": " 10. mars",
+  "VATDeadlineAnnualFor": "Alle som har årlig mva.",
+  "VATAnnualNote": "Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.",
+  "employmentDeclarationTitle": "A-melding",
+  "employmentDeclarationDeadline": "Hver måned (innen den 5. påfølgende måned).",
+  "employmentDeclarationFor": " Alle som utbetaler lønn.",
+  "advanceTaxTitle": "Forskuddsskatt",
+  "advanceTaxDeadlineForSoleProprietorship": "Frist for ENK: 15. mar. / 15. jun. / 15. sept. / 15. des.",
+  "advanceTaxDeadlineForCorporation": "Frist for AS: 15. feb. / 15. apr.",
+  "advanceTaxFor": "Alle skattepliktige.",
+  "formsforaccounting": "Skjemaer for regnskap",
+
+
+
+
+  "contactPageTitle": "Har du noe på hjertet?",
+  "contactPageDescription": "Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.",
+  "talkToUs": "Snakk med oss",
+  "yourFeedbackIsImportant": "Din tilbakemelding er viktig for oss. Vi er klare til å lytte og finne løsninger sammen.",
+  "phoneNumber": "+0047 40 05 68 98",
+  "whenInNeed": "Når en er i nød",
+  "helpFromFriends": ".. trenger man litt hjelp fra venner... eller MN Regnskap support. Ikke overtenk... vi er her for deg.",
+  "requestConsultation": "Be om konsultasjon",
+  "concentrateOnWhatYouDoBest": "Konsentrer deg om det du er god på – Vi tar oss av regnskapet! Ta kontakt med oss for en uforpliktende samtale.",
+  "submit": "Send Inn",
+  "letsTalkOverCoffee": "Skal vi ta det over en kopp kaffe? ☕️",
+  "headOffice": "Hovedkontor",
+  "address": "Vollaveien 20 A, Oslo, 0668, Norge",
+  "callUs": "Ring oss",
+  "organizationNumber": "Organisasjons nummer",
+  "organizationNumberValue": "992 720 999",
+  "email": "mn@mnregnskap.no"
+}
+
+
+
+
+
 
 
 
