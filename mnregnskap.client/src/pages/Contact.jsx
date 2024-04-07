@@ -1,8 +1,5 @@
 /* import React, { useState } from 'react'; */
 import emailjs from '@emailjs/browser'; // Importer emailjs
-import map from '../assets/map.png';
-import phone from '../assets/phone.png';
-import message from '../assets/message.png';
 import './Contact.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
@@ -59,7 +56,7 @@ function Contact() {
                 <div className="main-wrapper">
                     <div className="supports">
                         <div className="support-card first">
-                            <img src={phone} className="support-card-image" />
+                            <img src="/phonepng" className="support-card-image" />
                                 <h4>{textData.talkToUs}</h4>
                                 <span>{textData.yourFeedbackIsImportant}</span>
                                 <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
@@ -67,7 +64,7 @@ function Contact() {
                                 <span>{textData.helpFromFriends}</span>
                             </div>
                             <div className="support-card second">
-                                <img src={message} className="support-card-image" alt="Melding" />
+                                <img src="/message.png" className="support-card-image" alt="Melding" />
                                 <h4>{textData.requestConsultation}</h4>
                                 <span>{textData.concentrateOnWhatYouDoBest}</span>
                                 <form onSubmit={sendEmail}>
@@ -94,7 +91,7 @@ function Contact() {
                         <div className="connect-main">
                             <div className="connect-body">
                                 <div className="map-box">
-                                    <img src={map} alt="Global Offices Map" />
+                                    <img src="/map.png" alt="Global Offices Map" />
                                 </div>
                                 <div className="connect-detail">
                                     <div className="detail-item">
