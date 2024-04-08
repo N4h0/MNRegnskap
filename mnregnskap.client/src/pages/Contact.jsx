@@ -56,7 +56,7 @@ function Contact() {
                 <div className="main-wrapper">
                     <div className="supports">
                         <div className="support-card first">
-                            <img src="/phonepng" className="support-card-image" />
+                            <img src="phone.png" className="support-card-image" />
                                 <h4>{textData.talkToUs}</h4>
                                 <span>{textData.yourFeedbackIsImportant}</span>
                                 <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>

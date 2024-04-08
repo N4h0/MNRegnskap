@@ -1,11 +1,11 @@
-h1 { /* overskrift*/
+.hero-heading h1 { /* overskrift*/
  
     font-size: 3rem;
     line-height: 1.25;
 }
 
-h1, h4, h5, p, .contact-us-page {
-    font-family: 'Varela Round', sans-serif;
+.hero-heading h1, .support-card h4, h5, p, .contact-us-page {
+    font-family: 'Lato', sans-serif;
     font-weight: 6000;
 }
 
@@ -268,7 +268,7 @@ a {
 }
 
 .supports h4, .hero-heading {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 6000;
 }
 

@@ -82,6 +82,7 @@
   }
 
 /* ---------------- FULL PAGE WRAPPER ------------------ */
+/* denne delen tillater et bakgrunnsbilde med innhold som et lag over */
 
 .full-page-wrapper {
     position: relative; /* Posisjonerer barna relativt til denne */
