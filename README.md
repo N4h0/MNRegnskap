@@ -1,9 +1,1 @@
-# MNRegnskap
-
-Må være installert: (korrigerte kommentaren)
-react-router-dom: npm install react-router-dom
-reactstrap: npm install reactstrap
-font awesome: npm install --save @fortawesome/react-fontawesome
-font awesome icon: npm install --save @fortawesome/free-solid-svg-icons
-
-Alt i 1 kommando: npm install react-router-dom reactstrap @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+Dette repositoriet består av en nettside laget i React med dotnet. Prosjektet er starten på bacheloroppgave 2024 med en dotnet backend, men er ikke komplett.
